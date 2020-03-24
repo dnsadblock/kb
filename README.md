@@ -1,0 +1,2 @@
+# kb
+Knowledgebase for dnsadblock
