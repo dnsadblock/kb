@@ -1,12 +1,177 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>DnsAdBlock Knowledgebase</title>
-    <link href="https://dnsadblock.github.io/kb/feed.xml" rel="self" />
-    <link href="https://dnsadblock.github.io/kb" />
-    <updated>1970-01-01T02:00:00+02:00</updated>
+    <link href="https://knowledgebase.dnsadblock.com/feed.xml" rel="self" />
+    <link href="https://knowledgebase.dnsadblock.com" />
+    <updated>2020-03-24T18:33:13+02:00</updated>
     <author>
         <name>Romeo Mihalcea</name>
     </author>
-    <id>https://dnsadblock.github.io/kb</id>
+    <id>https://knowledgebase.dnsadblock.com</id>
 
+    <entry>
+        <title>How to install and configure our software</title>
+        <author>
+            <name>Romeo Mihalcea</name>
+        </author>
+        <link href="https://knowledgebase.dnsadblock.com/how-to-install-and-configure-our-software/"/>
+        <id>https://knowledgebase.dnsadblock.com/how-to-install-and-configure-our-software/</id>
+
+        <updated>2020-03-24T18:33:10+02:00</updated>
+            <summary>
+                <![CDATA[
+                    <h2 id="mcetoc_1e46g66r11">Windows</h2>
+<p>If you're on Windows please head over to the <strong>Windows installation instructions</strong>.</p>
+
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h2 id="mcetoc_1e46g66r11">Windows</h2>
+<p>If you're on Windows please head over to the <strong>Windows installation instructions</strong>.</p>
+
+<h2 id="mcetoc_1e46g6sjvb">Other OS</h2>
+<p>We support many operating systems and we're constantly adding to our list. If you don't find your OS here please contact us so we can add it.</p>
+<p>To install our software is really easy. You can use our quick installer in your terminal:</p>
+<pre><code class="language-bash">sh -c 'sh -c "$(curl -sL https://api.dnsadblock.com/install)"'</code></pre>
+<p id="mcetoc_1e46gqtave">If you don't want to execute content taken via curl (understandably so) please navigate to our list of supported operating systems. You will have separate guides there for every OS we support.</p>
+<h3 id="mcetoc_1e46giqljc">Features</h3>
+<p>Our proxy software has many features but here's the gist:</p>
+<ul>
+<li>Proxies DNS:53 traffic to DNS over HTTPS</li>
+<li>Runs on single host or on router level</li>
+<li>Detection of router and setup</li>
+<li>Detection of captive portals</li>
+</ul>
+<h3 id="mcetoc_1e46im71tf">Usage</h3>
+<p>After installing the proxy software you can set it up using the following commands:</p>
+<pre><code class="language-text">Usage: dnsadblock &lt;command&gt; [arguments]
+
+The commands are:
+
+    install         install service on the system
+    uninstall       uninstall service from the system
+    start           start installed service
+    stop            stop installed service
+    restart         restart installed service
+    status          return service status
+    log             show service logs
+    run             run the daemon
+    config          manage configuration
+    activate        setup the system to use NextDNS as a resolver
+    deactivate      restore the resolver configuration
+    version         show current version</code></pre>
+<strong><code>dnsadblock</code></strong> can run as a daemon or as a service.
+<p class="msg msg--warning">Most commands require<strong> sudo</strong> because <strong>dnsadblock</strong> will alter your network configuration settings</p>
+<h4 id="mcetoc_1e46iuv7jg">Running as a daemon</h4>
+<p>When running as a daemon you are responsible for managing its process. You can execute <code>dnsadblock run -config someConfigId</code> in your terminal and the process will start and stay up for as long as you have the terminal open. </p>
+<p>The <code>run</code> command supports the following flags:</p>
+<pre><code class="language-text"><strong>-auto-activate</strong>
+    Run activate at startup and deactivate on exit.
+
+<strong>-bogus-priv</strong>
+    Bogus private reverse lookups.
+
+    All reverse lookups for private IP ranges (ie 192.168.x.x, etc.) are answered
+    with "no such domain" rather than being forwarded upstream. The set of prefixes
+    affected is the list given in RFC6303, for IPv4 and IPv6. (default true)
+
+<strong>-config</strong> value
+    Connection configuration id (from the connections list in your account).
+
+    The configuration id can be prefixed with a match condition for each query:
+    * 10.0.3.0/24=abcdef: A CIDR can be used to restrict a configuration to a subnet.
+    * 00:1c:42:2e:60:4a=abcdef: A MAC address can be used to restrict configuration
+    to a specific host on the LAN.
+
+    This parameter can be repeated. The first match wins.
+
+<strong>-config-file</strong> string
+    Custom path to configuration file.
+
+<strong>-forwarder</strong> value
+    A DNS server to use for a specified domain.
+
+    Forwarders can be defined to send proxy DNS traffic to an alternative DNS
+    upstream resolver for specific domains. The format of this parameter is 
+    [DOMAIN=]SERVER_ADDR[,SERVER_ADDR...].
+
+    A SERVER_ADDR can ben either an IP[:PORT] for DNS53 (unencrypted UDP, TCP),
+    or a HTTPS URL for a DNS over HTTPS server. For DoH, a bootstrap IP can be
+    specified as follows:
+        https://dns.google/dns-query#8.8.8.8,2001:4860:4860::8888
+        
+      Several servers can be specified, separated by comas to implement failover.
+    This parameter can be repeated. The first match wins.
+
+<strong>-listen</strong> string
+    Listen address for UDP DNS proxy server. (default "localhost:53")
+
+<strong>-log-queries</strong>
+    Log DNS query.
+    Listen address for UDP DNS proxy server. (default "localhost:53")
+
+<strong>-log-format</strong>
+    The output format of the logged queries.
+    The supported formats are 'text' and 'json'. The 'json' format is a lot more
+    verbose and contains some extra fields as well
+
+<strong>-report-client-info</strong>
+    Embed clients information with queries.
+
+<strong>-setup-router</strong>
+    Automatically configures itself for a router setup.
+    Common types of router are detected to integrate gracefully. Changes applied
+    are undone on daemon exit. The listen option is ignored when this option is 
+    used.
+
+<strong>-use-hosts</strong>
+    Lookup /etc/hosts before sending queries to upstream resolver. (default true)
+</code></pre>
+<h4 id="mcetoc_1e46j35fph">Running as a service</h4>
+<p>To operate on a <strong><em>set it and forget it</em></strong> type we recommend using the <code>install</code> command. When running as a service use these commands to interact with the OS service management system:</p>
+<p class="msg msg--highlight ">The <code>install</code> and <code>config</code> command supports the same flags as the <code>run</code> command</p>
+<ul>
+<li><strong><code>install</code></strong> installs the service</li>
+<li><strong><code>uninstall</code></strong> removes the service</li>
+<li><strong><code>start</code></strong> starts the service (same as <code>run</code>)</li>
+<li><strong><code>stop</code></strong> stops the service</li>
+<li><strong><code>status</code></strong> returns status (<code>running</code> or <code>not running</code>)</li>
+</ul>
+<pre>sudo dnsadblock install -config someConfigId</pre>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>What is DOH - DNS over HTTPS?</title>
+        <author>
+            <name>Romeo Mihalcea</name>
+        </author>
+        <link href="https://knowledgebase.dnsadblock.com/what-is-doh-dns-over-https/"/>
+        <id>https://knowledgebase.dnsadblock.com/what-is-doh-dns-over-https/</id>
+            <category term="doh"/>
+            <category term="dns-over-https"/>
+            <category term="dns"/>
+
+        <updated>2020-03-24T16:34:34+02:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://knowledgebase.dnsadblock.com/media/posts/1/undraw_operating_system_4lr6.png" alt="What is DOH - DNS over HTTPS?" />
+                    The main advantage in using the DOH protocol is the fact that DNS queries are carried via http and they appear as regular http traffic. Traditional&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <img src="https://knowledgebase.dnsadblock.com/media/posts/1/undraw_operating_system_4lr6.png" alt="What is DOH - DNS over HTTPS?" />
+                <p><span >The main advantage in using the DOH protocol is the fact that DNS queries are carried via http and they appear as regular http traffic. Traditional DNS traffic is done on port 53 which makes it extremely easy to monitor.</span></p>
+<p>With DNS over HTTPS your traffic is not mixed any more and flows using the same protocol making it impossible to distinguish DNS traffic from regular one.</p>
+<h3 id="mcetoc_1e46eu9400"><span >How to switch to DOH</span></h3>
+<p class="msg msg--info">Our software <strong>already proxies your DNS traffic</strong> over to HTTPS endpoint</p>
+<p>If you're using our software then <strong>you don't have to do anything</strong> because we use DOH internally. Our software creates a local DNS tunnel that receives DNS queries and forwards them to the DNS server using DOH.</p>
+<p><span >If you just need the DOH url in order to use it elsewhere you can obtain it by navigating to your connections page. Once there click on the plus sign next to your connection in order to expand its details and copy the DOH address of your DNS server.</span></p>
+<p><img class="post__image post__image--center" src="https://knowledgebase.dnsadblock.com/media/posts/1//screenshot-localhost_9000-2020.01.29-13_12_05.png" alt="DNS over HTTPS settings " width="1208" height="372"></p>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
 </feed>
