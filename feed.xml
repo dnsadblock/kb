@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>DnsAdBlock Knowledgebase</title>
+    <link href="https://dnsadblock.github.io/kb/feed.xml" rel="self" />
+    <link href="https://dnsadblock.github.io/kb" />
+    <updated>1970-01-01T02:00:00+02:00</updated>
+    <author>
+        <name>Romeo Mihalcea</name>
+    </author>
+    <id>https://dnsadblock.github.io/kb</id>
+
+</feed>
