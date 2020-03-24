@@ -3,12 +3,73 @@
     <title>DnsAdBlock Knowledgebase</title>
     <link href="https://knowledgebase.dnsadblock.com/feed.xml" rel="self" />
     <link href="https://knowledgebase.dnsadblock.com" />
-    <updated>2020-03-24T21:49:43+02:00</updated>
+    <updated>2020-03-24T23:13:48+02:00</updated>
     <author>
         <name>Romeo Mihalcea</name>
     </author>
     <id>https://knowledgebase.dnsadblock.com</id>
 
+    <entry>
+        <title>How to update your connection details if you have a dynamic ip address</title>
+        <author>
+            <name>Romeo Mihalcea</name>
+        </author>
+        <link href="https://knowledgebase.dnsadblock.com/how-to-update-your-connection-details-if-you-have-a-dynamic-ip-address/"/>
+        <id>https://knowledgebase.dnsadblock.com/how-to-update-your-connection-details-if-you-have-a-dynamic-ip-address/</id>
+            <category term="dynamic-ip"/>
+            <category term="Frequently asked questions"/>
+
+        <updated>2020-03-24T23:13:37+02:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://knowledgebase.dnsadblock.com/media/posts/11/undraw_version_control_9bpv.png" alt="" />
+                    If you're not using our software and wish to stick to the traditional DNS over port 53 we have no way of authenticating you besides&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <img src="https://knowledgebase.dnsadblock.com/media/posts/11/undraw_version_control_9bpv.png" alt="" />
+                <p>If you're not using our software and wish to stick to the traditional DNS over port 53 we have no way of authenticating you besides your IP address. <span >A DNS server does not receive much from the request(client IP and requested DNS records). The only piece of information that we can use to identify a user is the IP address. When that changes, we have no way to determine your identity. If an IP address is not recognized within our system, we block the requests.</span></p>
+<p><span >Many ISPs recycle ip addresses and, usually when your router restarts or re-connects, they assign a different one from the available pool. Updating your connection with the newly assigned IP is easily done by two methods right now.</span></p>
+<h2 id="mcetoc_1e475v6as0">Update it manually in your connections page</h2>
+<p>The easiest solution is to go to your dashboard, find your connection and update the allowed address:</p>
+<figure class="post__image"><img src="https://knowledgebase.dnsadblock.com/media/posts/11/screenshot-dnsadblock.com-2020.03.24-23_08_47.png" alt="" width="535" height="425"></figure>
+<h2 id="mcetoc_1e4762pif1">Update it programatically using our API</h2>
+<p><span >All our endpoints are API accessible and updating your connection is easily doable using a simple </span><span ><code class="code-81e98f88" spellcheck="false" >GET</code></span><span  > request.</span></p>
+<p><span >Our API requires authentication so make sure you grab a copy of your API token before attempting to call any endpoints</span></p>
+<figure class="post__image"><img src="https://knowledgebase.dnsadblock.com/media/posts/11/screenshot-dnsadblock.com-2019.03.25-01-09-32.png" alt="" width="815" height="752"></figure>
+<div class="reset-3c756112--withControls-56f27afc">
+<div class="reset-3c756112--sideControlsWrapper-009b974d">
+<div class="reset-3c756112--commentsArea-56f27afc">
+<div class="reset-3c756112--contentWrapper-56f27afc">
+<p class="blockParagraph-544a408c" ><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span >So we got our API token (<code class="code-81e98f88" spellcheck="false" >a657i56c2ac8e2809c45eba8b8e52e0a4a604a4</code> in our screenshot - completely fake but we will use it as an example), next we need to also grab the API url where we send our new IP address. For this, you will have to navigate to the <code class="code-81e98f88" spellcheck="false" >Connections</code> page in our application and expand the connection for which you're performing the updates. Once expanded, scroll to the bottom of the list and copy the <code class="code-81e98f88" spellcheck="false" >API update Ip url</code> value from that input. It will look something like this: <code class="code-81e98f88" spellcheck="false" >https://backend.dnsadblock.com/api/user/connections/4621/&lt;new-ip-address&gt;/</code>. Whenever you need to update, make sure to replace <code class="code-81e98f88" spellcheck="false" >&lt;new-ip-address&gt;</code> with the actual IP address (the new one).</span></span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="reset-3c756112--withControls-56f27afc">
+<div class="reset-3c756112--sideControlsWrapper-009b974d">
+<div class="reset-3c756112--commentsArea-56f27afc">
+<div class="reset-3c756112--contentWrapper-56f27afc">
+<p class="blockParagraph-544a408c" ><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span >If my new IP address is <code class="code-81e98f88" spellcheck="false" >23.21.23.21</code>, the API url will be: <code class="code-81e98f88" spellcheck="false" >https://backend.dnsadblock.com/api/user/connections/4621/23.21.23.21/</code>.</span></span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="reset-3c756112--withControls-56f27afc" >
+<div class="reset-3c756112--sideControlsWrapper-009b974d">
+<div class="reset-3c756112--commentsArea-56f27afc">
+<div class="reset-3c756112--contentWrapper-56f27afc">
+<p class="blockParagraph-544a408c" ><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span >Now that we have our API url for this connection is time to create the <code class="code-81e98f88" spellcheck="false" >GET</code> request. This is the time where we have to also provide the token we copied earlier and pass it on in the request headers. I will provide here a full working example in Javascript.</span></span></p>
+<pre class="blockParagraph-544a408c" >const autoUpdateDynamicIp = (newIp) =&gt; {<br>     const apiUrl = "https://backend.dnsadblock.com/api/user/connections/46";<br>     const apiToken = "a657i56c2ac8e2809c45eba8b8e52e0a4a604a4";<br><br>     axios.get(`${apiUrl}/${newIp}/`, {<br>         'Authorization': `Token ${apiToken}`,<br>     });<br>}</pre>
+<p><span >The example uses the </span><a class="link-a079aa82--primary-53a25e66--link-faf6c434" href="https://github.com/axios/axios" target="_blank" rel="noopener noreferrer" ><span >axios</span></a><span  > npm package so make sure to <code class="code-81e98f88" spellcheck="false" >npm install</code> it before using the code.</span></p>
+</div>
+</div>
+</div>
+</div>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>How to configure your connection</title>
         <author>
@@ -481,39 +542,6 @@ The commands are:
 <li><strong><code>status</code></strong> returns status (<code>running</code> or <code>not running</code>)</li>
 </ul>
 <pre>sudo dnsadblock install -config someConfigId</pre>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>What is DOH - DNS over HTTPS?</title>
-        <author>
-            <name>Romeo Mihalcea</name>
-        </author>
-        <link href="https://knowledgebase.dnsadblock.com/what-is-doh-dns-over-https/"/>
-        <id>https://knowledgebase.dnsadblock.com/what-is-doh-dns-over-https/</id>
-            <category term="doh"/>
-            <category term="dns-over-https"/>
-            <category term="dns"/>
-            <category term="Frequently asked questions"/>
-
-        <updated>2020-03-24T21:48:16+02:00</updated>
-            <summary>
-                <![CDATA[
-                        <img src="https://knowledgebase.dnsadblock.com/media/posts/1/undraw_operating_system_4lr6.png" alt="What is DOH - DNS over HTTPS?" />
-                    The main advantage in using the DOH protocol is the fact that DNS queries are carried via http and they appear as regular http traffic. Traditional&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                    <img src="https://knowledgebase.dnsadblock.com/media/posts/1/undraw_operating_system_4lr6.png" alt="What is DOH - DNS over HTTPS?" />
-                <p><span >The main advantage in using the DOH protocol is the fact that DNS queries are carried via http and they appear as regular http traffic. Traditional DNS traffic is done on port 53 which makes it extremely easy to monitor.</span></p>
-<p>With DNS over HTTPS your traffic is not mixed any more and flows using the same protocol making it impossible to distinguish DNS traffic from regular one.</p>
-<h3 id="mcetoc_1e46eu9400"><span >How to switch to DOH</span></h3>
-<p class="msg msg--info">Our software <strong>already proxies your DNS traffic</strong> over to HTTPS endpoint</p>
-<p>If you're using our software then <strong>you don't have to do anything</strong> because we use DOH internally. Our software creates a local DNS tunnel that receives DNS queries and forwards them to the DNS server using DOH.</p>
-<p><span >If you just need the DOH url in order to use it elsewhere you can obtain it by navigating to your connections page. Once there click on the plus sign next to your connection in order to expand its details and copy the DOH address of your DNS server.</span></p>
-<p><img class="post__image post__image--center" src="https://knowledgebase.dnsadblock.com/media/posts/1//screenshot-localhost_9000-2020.01.29-13_12_05.png" alt="DNS over HTTPS settings " width="1208" height="372"></p>
-<p> </p>
             ]]>
         </content>
     </entry>
