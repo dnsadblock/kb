@@ -3,12 +3,247 @@
     <title>DnsAdBlock Knowledgebase</title>
     <link href="https://knowledgebase.dnsadblock.com/feed.xml" rel="self" />
     <link href="https://knowledgebase.dnsadblock.com" />
-    <updated>2020-03-24T18:33:13+02:00</updated>
+    <updated>2020-03-24T20:38:49+02:00</updated>
     <author>
         <name>Romeo Mihalcea</name>
     </author>
     <id>https://knowledgebase.dnsadblock.com</id>
 
+    <entry>
+        <title>Synology installation instructions</title>
+        <author>
+            <name>Romeo Mihalcea</name>
+        </author>
+        <link href="https://knowledgebase.dnsadblock.com/synology-installation-instructions/"/>
+        <id>https://knowledgebase.dnsadblock.com/synology-installation-instructions/</id>
+            <category term="synology"/>
+            <category term="installation"/>
+            <category term="curl"/>
+            <category term="bash"/>
+
+        <updated>2020-03-24T20:37:00+02:00</updated>
+            <summary>
+                <![CDATA[
+                    InstallYou need to enable SSH and login via terminal into your Synology box: It is also a good idea to set a static IP for&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h3 id="mcetoc_1e46shv940">Install</h3>
+<p>You need to enable SSH and login via terminal into your Synology box:</p>
+<ol>
+<li>Enable SSH in <code>Control Panel</code> -&gt; <code>Terminal &amp; SNMP</code> -&gt; <code>Enable SSH service</code></li>
+<li>Connect to the Synology using SSH</li>
+<li>Run the following command: <code>sh -c "$(curl -sL https://dnsadblock.com/install)"</code></li>
+<li>Follow the instructions</li>
+<li>Configure your router DHCP to point DNS to the IP of your Synology</li>
+</ol>
+<p class="msg msg--info">It is also a good idea to set a static IP for your Synology so it persists across restarts and power failures</p>
+<p>To upgrade you need to run the same command that you used to install. If there is a new version available, the install script will prompt you to upgrade.</p>
+<h3 id="mcetoc_1e46p8b3q3">Troubleshooting</h3>
+<p>To troubleshoot the installation script you can prefix the command with a debugging flag:</p>
+<pre>DEBUG=1 sh -c "$(curl -sL https://dnsadblock.com/install)"</pre>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Installation using curl installer</title>
+        <author>
+            <name>Romeo Mihalcea</name>
+        </author>
+        <link href="https://knowledgebase.dnsadblock.com/installation-using-curl-installer/"/>
+        <id>https://knowledgebase.dnsadblock.com/installation-using-curl-installer/</id>
+            <category term="installation"/>
+            <category term="curl"/>
+            <category term="bash"/>
+
+        <updated>2020-03-24T20:24:42+02:00</updated>
+            <summary>
+                <![CDATA[
+                    On some operating systems we support only the bash installer. To use it, please follow this tutorial. sh -c "$(curl -sL https://dnsadblock.com/install)"UpgradeTo upgrade you need to&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p id="mcetoc_1e46shv940">On some operating systems we support only the bash installer. To use it, please follow this tutorial.</p>
+<h2 id="mcetoc_1e46p373k0">Install</h2>
+Run the following command: 
+<pre>sh -c "$(curl -sL https://dnsadblock.com/install)"</pre>
+<h3 id="mcetoc_1e46p5rjr2">Upgrade</h3>
+<p>To upgrade you need to run the same command that you used to install. If there is a new version available, the install script will prompt you to upgrade.</p>
+<h3 id="mcetoc_1e46p8b3q3">Troubleshooting</h3>
+<p>To troubleshoot the installation script you can prefix the command with a debugging flag:</p>
+<pre>DEBUG=1 sh -c "$(curl -sL https://dnsadblock.com/install)"</pre>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Ach Based distribution installation</title>
+        <author>
+            <name>Romeo Mihalcea</name>
+        </author>
+        <link href="https://knowledgebase.dnsadblock.com/ach-based-distribution-installation/"/>
+        <id>https://knowledgebase.dnsadblock.com/ach-based-distribution-installation/</id>
+            <category term="installation"/>
+            <category term="arch"/>
+
+        <updated>2020-03-24T20:17:45+02:00</updated>
+            <summary>
+                <![CDATA[
+                    Using the installerInstallRun the following command: sh -c "$(curl -sL https://dnsadblock.com/install)"UpgradeTo upgrade you need to run the same command that you used to install. If there&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h2 id="mcetoc_1e46p373k0">Using the installer</h2>
+<h3 id="mcetoc_1e46p56c01">Install</h3>
+Run the following command: 
+<pre>sh -c "$(curl -sL https://dnsadblock.com/install)"</pre>
+<h3 id="mcetoc_1e46p5rjr2">Upgrade</h3>
+<p>To upgrade you need to run the same command that you used to install. If there is a new version available, the install script will prompt you to upgrade.</p>
+<h3 id="mcetoc_1e46p8b3q3">Troubleshooting</h3>
+<p>To troubleshoot the installation script you can prefix the command with a debugging flag:</p>
+<pre>DEBUG=1 sh -c "$(curl -sL https://dnsadblock.com/install)"</pre>
+<h2 id="mcetoc_1e46pd2tp4">Using the official channels</h2>
+<p>Update your repo sources:</p>
+<pre><code>sudo pacman -S yay
+yay -S dnsadblock</code></pre>
+<p>Once installed you can configure it like you would normally do:</p>
+<p>For a workstation:</p>
+<pre><code>sudo dnsadblock install \
+  -config &lt;your config id&gt; \
+  -auto-activate</code></pre>
+<p>For a router/server:</p>
+<pre><code>sudo dnsadblock install \
+  -config &lt;your config id&gt; \
+  -setup-router</code></pre>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Debian based distribution installation</title>
+        <author>
+            <name>Romeo Mihalcea</name>
+        </author>
+        <link href="https://knowledgebase.dnsadblock.com/debian-based-distribution-installation/"/>
+        <id>https://knowledgebase.dnsadblock.com/debian-based-distribution-installation/</id>
+            <category term="ubuntu"/>
+            <category term="installation"/>
+            <category term="debian"/>
+
+        <updated>2020-03-24T20:16:05+02:00</updated>
+            <summary>
+                <![CDATA[
+                    Using the installerInstallRun the following command: sh -c "$(curl -sL https://dnsadblock.com/install)"UpgradeTo upgrade you need to run the same command that you used to install. If there&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h2 id="mcetoc_1e46p373k0">Using the installer</h2>
+<h3 id="mcetoc_1e46p56c01">Install</h3>
+Run the following command: 
+<pre>sh -c "$(curl -sL https://dnsadblock.com/install)"</pre>
+<h3 id="mcetoc_1e46p5rjr2">Upgrade</h3>
+<p>To upgrade you need to run the same command that you used to install. If there is a new version available, the install script will prompt you to upgrade.</p>
+<h3 id="mcetoc_1e46p8b3q3">Troubleshooting</h3>
+<p>To troubleshoot the installation script you can prefix the command with a debugging flag:</p>
+<pre>DEBUG=1 sh -c "$(curl -sL https://dnsadblock.com/install)"</pre>
+<h2 id="mcetoc_1e46pd2tp4">Using the official channels</h2>
+<p>Update your repo sources:</p>
+<pre><code>wget -qO - https://dnsadblock.com/repo.gpg | sudo apt-key add -
+echo "deb https://dnsadblock.com/repo/deb stable main" | sudo tee /etc/apt/sources.list.d/dnsadblock.list
+sudo apt install apt-transport-https # only necessary on Debian
+sudo apt update
+sudo apt install dnsadblock</code></pre>
+<p>Once installed you can configure it like you would normally do:</p>
+<p>For a workstation:</p>
+<pre><code>sudo dnsadblock install \
+  -config &lt;your config id&gt; \
+  -auto-activate</code></pre>
+<p>For a router/server:</p>
+<pre><code>sudo dnsadblock install \
+  -config &lt;your config id&gt; \
+  -setup-router</code></pre>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>RPM Based Distribution installation</title>
+        <author>
+            <name>Romeo Mihalcea</name>
+        </author>
+        <link href="https://knowledgebase.dnsadblock.com/rpm-based-distribution-installation/"/>
+        <id>https://knowledgebase.dnsadblock.com/rpm-based-distribution-installation/</id>
+            <category term="rpm"/>
+            <category term="installation"/>
+            <category term="fedora"/>
+
+        <updated>2020-03-24T20:15:50+02:00</updated>
+            <summary>
+                <![CDATA[
+                    Using the installerInstallRun the following command: sh -c "$(curl -sL https://dnsadblock.com/install)"UpgradeTo upgrade you need to run the same command that you used to install. If there&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h2 id="mcetoc_1e46p373k0">Using the installer</h2>
+<h3 id="mcetoc_1e46p56c01">Install</h3>
+Run the following command: 
+<pre>sh -c "$(curl -sL https://dnsadblock.com/install)"</pre>
+<h3 id="mcetoc_1e46p5rjr2">Upgrade</h3>
+<p>To upgrade you need to run the same command that you used to install. If there is a new version available, the install script will prompt you to upgrade.</p>
+<h3 id="mcetoc_1e46p8b3q3">Troubleshooting</h3>
+<p>To troubleshoot the installation script you can prefix the command with a debugging flag:</p>
+<pre>DEBUG=1 sh -c "$(curl -sL https://dnsadblock.com/install)"</pre>
+<h2 id="mcetoc_1e46pd2tp4">Using the official channels</h2>
+<p>Update your repo sources:</p>
+<pre><code>sudo curl -s https://dnsadblock.com/yum.repo -o /etc/yum.repos.d/dnsadblock.repo
+sudo yum install -y dnsadblock</code></pre>
+<p>Once installed you can configure it like you would normally do:</p>
+<p>For a workstation:</p>
+<pre><code>sudo dnsadblock install \
+  -config &lt;your config id&gt; \
+  -auto-activate</code></pre>
+<p>For a router/server</p>
+<pre><code>sudo dnsadblock install \
+  -config &lt;your config id&gt; \
+  -setup-router</code></pre>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Windows installation instructions</title>
+        <author>
+            <name>Romeo Mihalcea</name>
+        </author>
+        <link href="https://knowledgebase.dnsadblock.com/windows-installation-instructions/"/>
+        <id>https://knowledgebase.dnsadblock.com/windows-installation-instructions/</id>
+            <category term="windows"/>
+            <category term="install"/>
+            <category term="dns"/>
+
+        <updated>2020-03-24T19:04:01+02:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://knowledgebase.dnsadblock.com/media/posts/3/undraw_noted_pc9f.png" alt="DnsAdBlock windows installation tutorial" />
+                    For Windows you can install and use our GUI software which does the heavy lifting of starting and managing the proxy server, updating your adapter&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <img src="https://knowledgebase.dnsadblock.com/media/posts/3/undraw_noted_pc9f.png" alt="DnsAdBlock windows installation tutorial" />
+                <p>For Windows you can install and use our GUI software which does the heavy lifting of starting and managing the proxy server, updating your adapter settings to tunnel DNS traffic and applying the required configs; all with a single click.</p>
+<p>You can download the windows software by accessing the <strong><a href="https://dnsadblock.com/app/download" target="_blank" rel="noopener noreferrer">Download</a></strong> page on your dashboard.</p>
+<p class="blockParagraph-544a408c"  ><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span >Once installed you will be presented with a form where you must enter your api key (you can find that under your profile: <strong class="bold-3c254bd9" >My account </strong>&gt;<strong class="bold-3c254bd9" > Profile</strong>). We thought it would be easier to copy and paste an API key as opposed to having to remember the username/password combo.</span></span></p>
+<figure class="post__image"><img src="https://knowledgebase.dnsadblock.com/media/posts/3/Screenshot-from-2020-01-27-06-17-08.png" alt="" width="940" height="551"></figure>
+<p class="blockParagraph-544a408c" ><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span >After adding you API key the app will display a small dashboard which lists your connections. You can click on any of the connections, hit <strong>Connect</strong> and the app will bring up the <strong>DnsAdBlock</strong> adapter. </span></span></p>
+<p ><img class="post__image" src="https://knowledgebase.dnsadblock.com/media/posts/3/windows-app.png" alt="" width="1000" height="650"></p>
+<div  >
+<figure class="post__image"><img src="https://knowledgebase.dnsadblock.com/media/posts/3/windows-app-connected.png" alt="" width="1000" height="650"></figure>
+</div>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>How to install and configure our software</title>
         <author>
@@ -17,17 +252,19 @@
         <link href="https://knowledgebase.dnsadblock.com/how-to-install-and-configure-our-software/"/>
         <id>https://knowledgebase.dnsadblock.com/how-to-install-and-configure-our-software/</id>
 
-        <updated>2020-03-24T18:33:10+02:00</updated>
+        <updated>2020-03-24T20:14:21+02:00</updated>
             <summary>
                 <![CDATA[
-                    <h2 id="mcetoc_1e46g66r11">Windows</h2>
+                    <p id="mcetoc_1e46r1q1e0">Follow this guide to learn how to install, configure and run our software for various operating systems. </p>
+<h2 id="mcetoc_1e46g66r11">Windows</h2>
 <p>If you're on Windows please head over to the <strong>Windows installation instructions</strong>.</p>
 
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <h2 id="mcetoc_1e46g66r11">Windows</h2>
+                <p id="mcetoc_1e46r1q1e0">Follow this guide to learn how to install, configure and run our software for various operating systems. </p>
+<h2 id="mcetoc_1e46g66r11">Windows</h2>
 <p>If you're on Windows please head over to the <strong>Windows installation instructions</strong>.</p>
 
 <h2 id="mcetoc_1e46g6sjvb">Other OS</h2>
