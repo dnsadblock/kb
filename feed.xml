@@ -3,12 +3,117 @@
     <title>DnsAdBlock Knowledgebase</title>
     <link href="https://knowledgebase.dnsadblock.com/feed.xml" rel="self" />
     <link href="https://knowledgebase.dnsadblock.com" />
-    <updated>2020-03-24T20:38:49+02:00</updated>
+    <updated>2020-03-24T21:49:43+02:00</updated>
     <author>
         <name>Romeo Mihalcea</name>
     </author>
     <id>https://knowledgebase.dnsadblock.com</id>
 
+    <entry>
+        <title>How to configure your connection</title>
+        <author>
+            <name>Romeo Mihalcea</name>
+        </author>
+        <link href="https://knowledgebase.dnsadblock.com/how-to-configure-your-connection/"/>
+        <id>https://knowledgebase.dnsadblock.com/how-to-configure-your-connection/</id>
+            <category term="rules"/>
+            <category term="Frequently asked questions"/>
+
+        <updated>2020-03-24T21:44:42+02:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://knowledgebase.dnsadblock.com/media/posts/10/undraw_personal_settings_kihd.png" alt="" />
+                    <p class="blockParagraph-544a408c" data-key="2" data-slate-fragment="JTdCJTIyb2JqZWN0JTIyJTNBJTIyZG9jdW1lbnQlMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTdEJTJDJTIybm9kZXMlMjIlM0ElNUIlN0IlMjJvYmplY3QlMjIlM0ElMjJibG9jayUyMiUyQyUyMnR5cGUlMjIlM0ElMjJwYXJhZ3JhcGglMjIlMkMlMjJpc1ZvaWQlMjIlM0FmYWxzZSUyQyUyMmRhdGElMjIlM0ElN0IlN0QlMkMlMjJub2RlcyUyMiUzQSU1QiU3QiUyMm9iamVjdCUyMiUzQSUyMnRleHQlMjIlMkMlMjJsZWF2ZXMlMjIlM0ElNUIlN0IlMjJvYmplY3QlMjIlM0ElMjJsZWFmJTIyJTJDJTIydGV4dCUyMiUzQSUyMlRoZSUyMG1vc3QlMjBpbXBvcnRhbnQlMjBhc3BlY3QlMjBvZiUyMGVhY2glMjBjb25uZWN0aW9uJTIwaXMlMjBpdHMlMjBjdXN0b21pemF0aW9uJTIwYXNwZWN0LiUyMEVhY2glMjBjb25uZWN0aW9uJTIwY2FuJTIwaGF2ZSUyMGRpZmZlcmVudCUyMHNldHRpbmdzJTIwYW5kJTIwYmxvY2tpbmclMjBydWxlcyUyMHRoYXQlMjBjYW4lMjBiZSUyMGFwcGxpZWQlMjBvciUyMG5vdC4lMjIlMkMlMjJtYXJrcyUyMiUzQSU1QiU1RCU3RCU1RCU3RCU1RCU3RCUyQyU3QiUyMm9iamVjdCUyMiUzQSUyMmJsb2NrJTIyJTJDJTIydHlwZSUyMiUzQSUyMmhlYWRpbmctMiUyMiUyQyUyMmlzVm9pZCUyMiUzQWZhbHNlJTJDJTIyZGF0YSUyMiUzQSU3QiU3RCUyQyUyMm5vZGVzJTIyJTNBJTVCJTdCJTIyb2JqZWN0JTIyJTNBJTIydGV4dCUyMiUyQyUyMmxlYXZlcyUyMiUzQSU1QiU3QiUyMm9iamVjdCUyMiUzQSUyMmxlYWYlMjIlMkMlMjJ0ZXh0JTIyJTNBJTIyJTIyJTJDJTIybWFya3MlMjIlM0ElNUIlNUQlN0QlNUQlN0QlNUQlN0QlNUQlN0Q="><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1">The most important aspect of each connection is its customization window. Each connection can have different settings and blocking rules that can be applied or not.</span></span></p>
+
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <img src="https://knowledgebase.dnsadblock.com/media/posts/10/undraw_personal_settings_kihd.png" alt="" />
+                <p class="blockParagraph-544a408c"  ><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span >The most important aspect of each connection is its customization window. Each connection can have different settings and blocking rules that can be applied or not.</span></span></p>
+
+<h2 id="the-blocking-groups" class="blockHeading-442b4f12--blockHeading2WithMargin-532d771d" ><span >The blocking groups</span></h2>
+<p><span >Our blocking rules are always under some relevant category that can be enabled or disabled at any time. This is done in order to be able to differentiate between certain groups of rules and create custom experiences based on the user</span></p>
+<p><span >Our current groups are the following:</span></p>
+<ul>
+<li>Ads</li>
+<li>Tracking</li>
+<li>Malware</li>
+<li>Crypto</li>
+<li>Adult</li>
+<li>Fake News</li>
+<li>Gambling</li>
+<li>Phishing</li>
+<li>Age restricted</li>
+<li>Gaming</li>
+</ul>
+<p class="blockParagraph-544a408c"  ><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span >In total, these categories hold millions of records that we regularly update.</span></span></p>
+<h3 id="mcetoc_1e4711gel0"  ><span >How to enable/disable categories</span></h3>
+<p class="blockParagraph-544a408c" ><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span >In order to alter these settings you need to go to your dashboard and click on the "plus" sign/icon next to the connection you wish to update. After clicking, a form will slide down under your connection which will contain some radio buttons that allow you to alter the settings.</span></span></p>
+<figure class="post__image"><img src="https://knowledgebase.dnsadblock.com/media/posts/10/screenshot-dnsadblock.com-2020.02.24-04_48_49.png" alt="" width="803" height="471"></figure>
+<h3 id="mcetoc_1e4712p4s1">Other settings</h3>
+<h4 id="mcetoc_1e4713d822">Lockdown mode</h4>
+<p class="blockParagraph-544a408c"  ><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span >The <code class="code-81e98f88" spellcheck="false" >lockdown</code> mode allows you to stop the entire DNS for that connection All requests will be denied except for the rules that you added into your <code class="code-81e98f88" spellcheck="false" >Whitelisted</code> list. For example let's say you're a teacher in a classroom holding an exam. You want to allow students to browse the internet but only on Wikipedia and Google search. You go to your </span><a class="link-a079aa82--primary-53a25e66--link-faf6c434" href="https://www.dnsadblock.com/app/filters" target="_blank" rel="noopener noreferrer" ><span ><strong class="bold-3c254bd9" >Filters page</strong></span></a><span > and add these two domains into the <code class="code-81e98f88" spellcheck="false" >Whitelisted</code> list: wikipedia.com and google.com. After that, you go to your connection and enable the lockdown mode. Now, all DNS requests will be denied and the internet will stop working except for requests for those domains you just added.</span></span></p>
+<h4 id="mcetoc_1e47140qj3"  >Safe search</h4>
+<div class="reset-3c756112">
+<div class="reset-3c756112--pageBody-a91db4ac">
+<div class="reset-3c756112--container-960c7c26" >
+<div spellcheck="true"   >
+<p class="blockParagraph-544a408c" ><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span >This setting will identify search engine queries and redirect them to the "safer" alternative where engines do not display results that are not suitable for children.</span></span></p>
+</div>
+</div>
+</div>
+</div>
+<div  > </div>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>How to create block rules</title>
+        <author>
+            <name>Romeo Mihalcea</name>
+        </author>
+        <link href="https://knowledgebase.dnsadblock.com/how-to-create-block-rules/"/>
+        <id>https://knowledgebase.dnsadblock.com/how-to-create-block-rules/</id>
+            <category term="rules"/>
+            <category term="Frequently asked questions"/>
+
+        <updated>2020-03-24T21:36:55+02:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://knowledgebase.dnsadblock.com/media/posts/9/undraw_mind_map_cwng.png" alt="" />
+                    <p class="blockParagraph-544a408c" data-key="7fb415276ec24699a03b158377cb1319" data-slate-fragment="JTdCJTIyb2JqZWN0JTIyJTNBJTIyZG9jdW1lbnQlMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTdEJTJDJTIybm9kZXMlMjIlM0ElNUIlN0IlMjJvYmplY3QlMjIlM0ElMjJibG9jayUyMiUyQyUyMnR5cGUlMjIlM0ElMjJwYXJhZ3JhcGglMjIlMkMlMjJpc1ZvaWQlMjIlM0FmYWxzZSUyQyUyMmRhdGElMjIlM0ElN0IlN0QlMkMlMjJub2RlcyUyMiUzQSU1QiU3QiUyMm9iamVjdCUyMiUzQSUyMnRleHQlMjIlMkMlMjJsZWF2ZXMlMjIlM0ElNUIlN0IlMjJvYmplY3QlMjIlM0ElMjJsZWFmJTIyJTJDJTIydGV4dCUyMiUzQSUyMk91ciUyMGNvZGUlMjBpcyUyMHNtYXJ0JTIwZW5vdWdoJTIwdG8lMjByZWNvZ25pemUlMjBzb21lJTIwc3BlY2lhbCUyMHRva2VucyUyMHdoZW4lMjBhbmFseXppbmclMjB5b3VyJTIwZmlsdGVyJTIwcnVsZXMuJTIwV2UlMjBhZGRlZCUyMHRoaXMlMjBmZWF0dXJlJTIwdG8lMjBzYXZlJTIwb24lMjB0aGUlMjBzaXplJTIwb2YlMjBvdXIlMjBnbG9iYWwlMjBydWxlcyUyMGFzJTIwYSUyMHdob2xlJTIwYW5kJTIwdG8lMjBhbGxvdyUyMHlvdSUyMHRvJTIwY29uc3VtZSUyMGZld2VyJTIwb2YlMjB0aG9zZSUyMCU1QyUyMk1heCUyMGN1c3RvbSUyMHJ1bGVzJTVDJTIyJTIwdGhhdCUyMGFyZSUyMHRpZWQlMjB0byUyMHlvdXIlMjBwbGFuLiUyMiUyQyUyMm1hcmtzJTIyJTNBJTVCJTVEJTdEJTVEJTdEJTVEJTdEJTJDJTdCJTIyb2JqZWN0JTIyJTNBJTIyYmxvY2slMjIlMkMlMjJ0eXBlJTIyJTNBJTIyaGVhZGluZy0yJTIyJTJDJTIyaXNWb2lkJTIyJTNBZmFsc2UlMkMlMjJkYXRhJTIyJTNBJTdCJTdEJTJDJTIybm9kZXMlMjIlM0ElNUIlN0IlMjJvYmplY3QlMjIlM0ElMjJ0ZXh0JTIyJTJDJTIybGVhdmVzJTIyJTNBJTVCJTdCJTIyb2JqZWN0JTIyJTNBJTIybGVhZiUyMiUyQyUyMnRleHQlMjIlM0ElMjIlMjIlMkMlMjJtYXJrcyUyMiUzQSU1QiU1RCU3RCU1RCU3RCU1RCU3RCU1RCU3RA=="><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="dd3b54d7bab9417db1a4d89de572f7ab">Our code is smart enough to recognize some special tokens when analyzing your filter rules. We added this feature to save on the size of our global rules as a whole and to allow you to consume fewer of those "Max custom rules" that are tied to your plan.</span></span></p>
+
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <img src="https://knowledgebase.dnsadblock.com/media/posts/9/undraw_mind_map_cwng.png" alt="" />
+                <p class="blockParagraph-544a408c"  ><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span >Our code is smart enough to recognize some special tokens when analyzing your filter rules. We added this feature to save on the size of our global rules as a whole and to allow you to consume fewer of those "Max custom rules" that are tied to your plan.</span></span></p>
+
+<h3 id="mcetoc_1e470ia2v0" class="blockParagraph-544a408c"  ><span >What is a smart rule anyway?</span></h3>
+<p class="blockParagraph-544a408c"  ><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span >A smart rule is one that contains special tokens that are interpreted when checking against your requests. These tokens allow you to target a wider portion of the domains or...a specific case - depending on the situation.</span></span></p>
+<p class="blockParagraph-544a408c"  ><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span >When we created our initial lists of domains to block we noticed that almost half of our rules were actually duplicates. For example <code class="code-81e98f88" spellcheck="false" >www.fakenewsimaginary.com</code> and <code class="code-81e98f88" spellcheck="false" >fakenewsimaginary.com</code>are one and the same from a technical standpoint.</span></span></p>
+<h3 id="the-double-pipe-token" class="blockHeading-442b4f12--blockHeading3WithMargin-532d7700" ><span >The double-pipe token</span></h3>
+<p class="blockParagraph-544a408c msg msg--info"  ><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Targets both the www and non-www part of a domain</span></p>
+<p class="blockParagraph-544a408c" > <span >By introducing the "double pipe" token we managed to shape down the global list of 2.5M records to about 1.2M. Translated for our example, </span><span ><code class="code-81e98f88" spellcheck="false" >||fakenewsimaginary.com</code></span><span > will now target both the </span><span ><code class="code-81e98f88" spellcheck="false" >www</code></span><span > variant and the </span><span  ><code class="code-81e98f88" spellcheck="false" >non-www</code></span></p>
+<p >T<span >his is really important because it directly affects the speed of the response from our servers to our clients. When a request is made, we have to parse our lists and see if the target of the request matches any record. The bigger the list, the longer the computation - basic stuff. We're doing everything we can to keep that list as small, accurate and healthy as possible.</span></p>
+<h3 id="mcetoc_1e470kp9t1" >The asterisk token</h3>
+<p class="msg msg--info">Targets everything after it</p>
+<p class="blockParagraph-544a408c"  ><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span >We don't use this token all too often because it is too broad and powerful for us but it has it's usefulness nonetheless. Some popular CDNs and specific websites generate URLs that go way beyond the first subdomain.</span></span></p>
+<p class="blockParagraph-544a408c"  ><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span >By adding an <code class="code-81e98f88" spellcheck="false" >*</code> in front of a domain say <code class="code-81e98f88" spellcheck="false" >*google.com</code> transforms that rule into a match by suffix type. The rule will basically match every target that ends with <code class="code-81e98f88" spellcheck="false" >google.com</code> as the root domain.</span></span></p>
+<div class="reset-3c756112">
+<div class="reset-3c756112--pageBody-a91db4ac">
+<div class="reset-3c756112--container-960c7c26" >
+<div spellcheck="true"   >
+<p class="blockParagraph-544a408c" ><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span >That's all for now, I'm sure we will be adding more to the filtering engine so make sure to subscribe to our mailing list or simply check back on our tutorials regularly for updated material.</span></span></p>
+</div>
+</div>
+</div>
+</div>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Synology installation instructions</title>
         <author>
@@ -389,8 +494,9 @@ The commands are:
             <category term="doh"/>
             <category term="dns-over-https"/>
             <category term="dns"/>
+            <category term="Frequently asked questions"/>
 
-        <updated>2020-03-24T16:34:34+02:00</updated>
+        <updated>2020-03-24T21:48:16+02:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://knowledgebase.dnsadblock.com/media/posts/1/undraw_operating_system_4lr6.png" alt="What is DOH - DNS over HTTPS?" />
