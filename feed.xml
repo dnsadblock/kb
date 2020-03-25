@@ -3,7 +3,7 @@
     <title>DnsAdBlock Knowledgebase</title>
     <link href="https://knowledgebase.dnsadblock.com/feed.xml" rel="self" />
     <link href="https://knowledgebase.dnsadblock.com" />
-    <updated>2020-03-25T04:24:23+02:00</updated>
+    <updated>2020-03-25T04:33:44+02:00</updated>
     <author>
         <name>Romeo Mihalcea</name>
     </author>
@@ -299,7 +299,7 @@ yay -S dnsadblock</code></pre>
             <category term="installation"/>
             <category term="debian"/>
 
-        <updated>2020-03-25T04:18:51+02:00</updated>
+        <updated>2020-03-25T04:30:52+02:00</updated>
             <summary>
                 <![CDATA[
                     <p>For debian-based operating systems we have 3 options. Pick the one that suits your scenario best.</p>
@@ -351,7 +351,7 @@ sudo apt install dnsadblock</code></pre>
             <category term="installation"/>
             <category term="fedora"/>
 
-        <updated>2020-03-25T04:20:00+02:00</updated>
+        <updated>2020-03-25T04:30:44+02:00</updated>
             <summary>
                 <![CDATA[
                     <p>For RPM based Linux operating systems we have 3 options. Pick the option that fits well for your scenario.</p>
@@ -433,16 +433,22 @@ sudo yum install -y dnsadblock</code></pre>
         </author>
         <link href="https://knowledgebase.dnsadblock.com/how-to-install-and-configure-our-software/"/>
         <id>https://knowledgebase.dnsadblock.com/how-to-install-and-configure-our-software/</id>
+            <category term="windows"/>
+            <category term="linux"/>
+            <category term="installation"/>
+            <category term="howto"/>
 
-        <updated>2020-03-25T04:21:38+02:00</updated>
+        <updated>2020-03-25T04:32:52+02:00</updated>
             <summary>
                 <![CDATA[
+                        <img src="https://knowledgebase.dnsadblock.com/media/posts/2/undraw_code_review_l1q9.png" alt="" />
                     <p>Follow this guide to learn how to install, configure and run our software for various operating systems. </p>
 
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
+                    <img src="https://knowledgebase.dnsadblock.com/media/posts/2/undraw_code_review_l1q9.png" alt="" />
                 <p>Follow this guide to learn how to install, configure and run our software for various operating systems. </p>
 
 <h2 id="mcetoc_1e46g66r11">GUI software for Windows, Linux (debian or RPM)</h2>
