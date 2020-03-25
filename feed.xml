@@ -3,7 +3,7 @@
     <title>DnsAdBlock Knowledgebase</title>
     <link href="https://knowledgebase.dnsadblock.com/feed.xml" rel="self" />
     <link href="https://knowledgebase.dnsadblock.com" />
-    <updated>2020-03-24T23:43:48+02:00</updated>
+    <updated>2020-03-25T03:33:42+02:00</updated>
     <author>
         <name>Romeo Mihalcea</name>
     </author>
@@ -418,21 +418,19 @@ sudo yum install -y dnsadblock</code></pre>
         <link href="https://knowledgebase.dnsadblock.com/how-to-install-and-configure-our-software/"/>
         <id>https://knowledgebase.dnsadblock.com/how-to-install-and-configure-our-software/</id>
 
-        <updated>2020-03-24T20:14:21+02:00</updated>
+        <updated>2020-03-25T03:33:30+02:00</updated>
             <summary>
                 <![CDATA[
-                    <p id="mcetoc_1e46r1q1e0">Follow this guide to learn how to install, configure and run our software for various operating systems. </p>
-<h2 id="mcetoc_1e46g66r11">Windows</h2>
-<p>If you're on Windows please head over to the <strong>Windows installation instructions</strong>.</p>
+                    <p>Follow this guide to learn how to install, configure and run our software for various operating systems. </p>
 
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p id="mcetoc_1e46r1q1e0">Follow this guide to learn how to install, configure and run our software for various operating systems. </p>
+                <p>Follow this guide to learn how to install, configure and run our software for various operating systems. </p>
+
 <h2 id="mcetoc_1e46g66r11">Windows</h2>
 <p>If you're on Windows please head over to the <strong>Windows installation instructions</strong>.</p>
-
 <h2 id="mcetoc_1e46g6sjvb">Other OS</h2>
 <p>We support many operating systems and we're constantly adding to our list. If you don't find your OS here please contact us so we can add it.</p>
 <p>To install our software is really easy. You can use our quick installer in your terminal:</p>
