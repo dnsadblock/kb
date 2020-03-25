@@ -3,7 +3,7 @@
     <title>DnsAdBlock Knowledgebase</title>
     <link href="https://knowledgebase.dnsadblock.com/feed.xml" rel="self" />
     <link href="https://knowledgebase.dnsadblock.com" />
-    <updated>2020-03-25T03:33:42+02:00</updated>
+    <updated>2020-03-25T04:21:54+02:00</updated>
     <author>
         <name>Romeo Mihalcea</name>
     </author>
@@ -223,15 +223,17 @@
             <category term="curl"/>
             <category term="bash"/>
 
-        <updated>2020-03-24T23:43:14+02:00</updated>
+        <updated>2020-03-25T04:05:04+02:00</updated>
             <summary>
                 <![CDATA[
-                    On some operating systems we support only the bash installer. To use it, please follow this tutorial. sh -c "$(curl -sL https://dnsadblock.com/install)"UpgradeTo upgrade you need to&hellip;
+                    <p>On some operating systems we support only the bash installer. To use it, please follow this tutorial.</p>
+
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p id="mcetoc_1e46shv940">On some operating systems we support only the bash installer. To use it, please follow this tutorial.</p>
+                <p>On some operating systems we support only the bash installer. To use it, please follow this tutorial.</p>
+
 <h2 id="mcetoc_1e46p373k0">Install</h2>
 Run the following command: 
 <pre>sh -c "$(curl -sL https://dnsadblock.com/install)"</pre>
@@ -297,15 +299,18 @@ yay -S dnsadblock</code></pre>
             <category term="installation"/>
             <category term="debian"/>
 
-        <updated>2020-03-24T20:16:05+02:00</updated>
+        <updated>2020-03-25T04:18:51+02:00</updated>
             <summary>
                 <![CDATA[
-                    Using the installerInstallRun the following command: sh -c "$(curl -sL https://dnsadblock.com/install)"UpgradeTo upgrade you need to run the same command that you used to install. If there&hellip;
+                    <p>For debian-based operating systems we have 3 options. Pick the one that suits your scenario best.</p>
+
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <h2 id="mcetoc_1e46p373k0">Using the installer</h2>
+                <p>For debian-based operating systems we have 3 options. Pick the one that suits your scenario best.</p>
+
+<h2 id="mcetoc_1e46p373k0">Using the installer</h2>
 <h3 id="mcetoc_1e46p56c01">Install</h3>
 Run the following command: 
 <pre>sh -c "$(curl -sL https://dnsadblock.com/install)"</pre>
@@ -330,6 +335,8 @@ sudo apt install dnsadblock</code></pre>
 <pre><code>sudo dnsadblock install \
   -config &lt;your config id&gt; \
   -setup-router</code></pre>
+<h2 id="mcetoc_1e47nkmpg1">Using the GUI</h2>
+<p>If you prefer desktop GUI apps instead of playing with the terminal please head over to our tutorial for the <a href="https://knowledgebase.dnsadblock.com/gui-app-installation-instructions/">desktop application</a>.</p>
             ]]>
         </content>
     </entry>
@@ -344,15 +351,18 @@ sudo apt install dnsadblock</code></pre>
             <category term="installation"/>
             <category term="fedora"/>
 
-        <updated>2020-03-24T20:15:50+02:00</updated>
+        <updated>2020-03-25T04:20:00+02:00</updated>
             <summary>
                 <![CDATA[
-                    Using the installerInstallRun the following command: sh -c "$(curl -sL https://dnsadblock.com/install)"UpgradeTo upgrade you need to run the same command that you used to install. If there&hellip;
+                    <p>For RPM based Linux operating systems we have 3 options. Pick the option that fits well for your scenario.</p>
+
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <h2 id="mcetoc_1e46p373k0">Using the installer</h2>
+                <p>For RPM based Linux operating systems we have 3 options. Pick the option that fits well for your scenario.</p>
+
+<h2 id="mcetoc_1e46p373k0">Using the installer</h2>
 <h3 id="mcetoc_1e46p56c01">Install</h3>
 Run the following command: 
 <pre>sh -c "$(curl -sL https://dnsadblock.com/install)"</pre>
@@ -374,32 +384,38 @@ sudo yum install -y dnsadblock</code></pre>
 <pre><code>sudo dnsadblock install \
   -config &lt;your config id&gt; \
   -setup-router</code></pre>
+<h2 id="mcetoc_1e47nkmpg1">Using the GUI</h2>
+<p>If you prefer desktop GUI apps instead of playing with the terminal please head over to our tutorial for the <a href="https://knowledgebase.dnsadblock.com/gui-app-installation-instructions/">desktop application</a>.</p>
             ]]>
         </content>
     </entry>
     <entry>
-        <title>Windows installation instructions</title>
+        <title>Installing the GUI software</title>
         <author>
             <name>Romeo Mihalcea</name>
         </author>
-        <link href="https://knowledgebase.dnsadblock.com/windows-installation-instructions/"/>
-        <id>https://knowledgebase.dnsadblock.com/windows-installation-instructions/</id>
+        <link href="https://knowledgebase.dnsadblock.com/gui-app-installation-instructions/"/>
+        <id>https://knowledgebase.dnsadblock.com/gui-app-installation-instructions/</id>
             <category term="windows"/>
+            <category term="rpm"/>
+            <category term="linux"/>
             <category term="install"/>
+            <category term="gui"/>
             <category term="dns"/>
+            <category term="debian"/>
 
-        <updated>2020-03-24T19:04:01+02:00</updated>
+        <updated>2020-03-25T04:08:15+02:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://knowledgebase.dnsadblock.com/media/posts/3/undraw_noted_pc9f.png" alt="DnsAdBlock windows installation tutorial" />
-                    For Windows you can install and use our GUI software which does the heavy lifting of starting and managing the proxy server, updating your adapter&hellip;
+                        <img src="https://knowledgebase.dnsadblock.com/media/posts/3/undraw_noted_pc9f.png" alt="DnsAdBlock GUI software installation tutorial" />
+                    For Windows, Linux (Debian or RPM based distros) you can install and use our GUI software which does the heavy lifting of starting and managing&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <img src="https://knowledgebase.dnsadblock.com/media/posts/3/undraw_noted_pc9f.png" alt="DnsAdBlock windows installation tutorial" />
-                <p>For Windows you can install and use our GUI software which does the heavy lifting of starting and managing the proxy server, updating your adapter settings to tunnel DNS traffic and applying the required configs; all with a single click.</p>
-<p>You can download the windows software by accessing the <strong><a href="https://dnsadblock.com/app/download" target="_blank" rel="noopener noreferrer">Download</a></strong> page on your dashboard.</p>
+                    <img src="https://knowledgebase.dnsadblock.com/media/posts/3/undraw_noted_pc9f.png" alt="DnsAdBlock GUI software installation tutorial" />
+                <p>For Windows, Linux (Debian or RPM based distros) you can install and use our GUI software which does the heavy lifting of starting and managing the proxy server, updating your adapter settings to tunnel DNS traffic and applying the required configs; all with a single click.</p>
+<p>You can download the GUI software by accessing the <strong><a href="https://dnsadblock.com/app/download" target="_blank" rel="noopener noreferrer">Download</a></strong> page on your dashboard.</p>
 <p class="blockParagraph-544a408c"  ><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span >Once installed you will be presented with a form where you must enter your api key (you can find that under your profile: <strong class="bold-3c254bd9" >My account </strong>&gt;<strong class="bold-3c254bd9" > Profile</strong>). We thought it would be easier to copy and paste an API key as opposed to having to remember the username/password combo.</span></span></p>
 <figure class="post__image"><img src="https://knowledgebase.dnsadblock.com/media/posts/3/Screenshot-from-2020-01-27-06-17-08.png" alt="" width="940" height="551"></figure>
 <p class="blockParagraph-544a408c" ><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span >After adding you API key the app will display a small dashboard which lists your connections. You can click on any of the connections, hit <strong>Connect</strong> and the app will bring up the <strong>DnsAdBlock</strong> adapter. </span></span></p>
@@ -418,7 +434,7 @@ sudo yum install -y dnsadblock</code></pre>
         <link href="https://knowledgebase.dnsadblock.com/how-to-install-and-configure-our-software/"/>
         <id>https://knowledgebase.dnsadblock.com/how-to-install-and-configure-our-software/</id>
 
-        <updated>2020-03-25T03:33:30+02:00</updated>
+        <updated>2020-03-25T04:21:38+02:00</updated>
             <summary>
                 <![CDATA[
                     <p>Follow this guide to learn how to install, configure and run our software for various operating systems. </p>
@@ -429,9 +445,10 @@ sudo yum install -y dnsadblock</code></pre>
             <![CDATA[
                 <p>Follow this guide to learn how to install, configure and run our software for various operating systems. </p>
 
-<h2 id="mcetoc_1e46g66r11">Windows</h2>
-<p>If you're on Windows please head over to the <strong>Windows installation instructions</strong>.</p>
-<h2 id="mcetoc_1e46g6sjvb">Other OS</h2>
+<h2 id="mcetoc_1e46g66r11">GUI software for Windows, Linux (debian or RPM)</h2>
+<p>If you're on Windows or want to use our GUI app please head over to the <a href="https://knowledgebase.dnsadblock.com/gui-app-installation-instructions/">GUI installation instructions</a>.</p>
+<figure class="post__image post__image--center"><img src="https://knowledgebase.dnsadblock.com/media/posts/2/windows-app.png" width="1000" height="650"></figure>
+<h2 id="mcetoc_1e46g6sjvb">Proxy daemon/service</h2>
 <p>We support many operating systems and we're constantly adding to our list. If you don't find your OS here please contact us so we can add it.</p>
 <p>To install our software is really easy. You can use our quick installer in your terminal:</p>
 <pre><code class="language-bash">sh -c 'sh -c "$(curl -sL https://api.dnsadblock.com/install)"'</code></pre>
