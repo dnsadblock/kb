@@ -3,7 +3,7 @@
     <title>DnsAdBlock Knowledgebase</title>
     <link href="https://knowledgebase.dnsadblock.com/feed.xml" rel="self" />
     <link href="https://knowledgebase.dnsadblock.com" />
-    <updated>2020-03-25T05:06:03+02:00</updated>
+    <updated>2020-03-25T16:53:09+02:00</updated>
     <author>
         <name>Romeo Mihalcea</name>
     </author>
@@ -438,7 +438,7 @@ sudo yum install -y dnsadblock</code></pre>
             <category term="installation"/>
             <category term="howto"/>
 
-        <updated>2020-03-25T04:32:52+02:00</updated>
+        <updated>2020-03-25T16:53:06+02:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://knowledgebase.dnsadblock.com/media/posts/2/undraw_code_review_l1q9.png" alt="" />
@@ -451,6 +451,7 @@ sudo yum install -y dnsadblock</code></pre>
                     <img src="https://knowledgebase.dnsadblock.com/media/posts/2/undraw_code_review_l1q9.png" alt="" />
                 <p>Follow this guide to learn how to install, configure and run our software for various operating systems. </p>
 
+<p id="mcetoc_1e492sbdn0" class="msg msg--highlight ">You can run our software as a desktop app (GUI) or as a service. Pick whatever works best for you</p>
 <h2 id="mcetoc_1e46g66r11">GUI software for Windows, Linux (debian or RPM)</h2>
 <p>If you're on Windows or want to use our GUI app please head over to the <a href="https://knowledgebase.dnsadblock.com/gui-app-installation-instructions/">GUI installation instructions</a>.</p>
 <figure class="post__image post__image--center"><img src="https://knowledgebase.dnsadblock.com/media/posts/2/windows-app.png" width="1000" height="650"></figure>
