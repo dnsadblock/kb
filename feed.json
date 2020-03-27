@@ -115,7 +115,7 @@
             "url": "https://knowledgebase.dnsadblock.com/ach-based-distribution-installation/",
             "title": "Arch Based distribution installation",
             "summary": "Using the installerInstallRun the following command: sh -c \"$(curl -sL https://api.dnsadblock.com/install)\"UpgradeTo upgrade you need to run the same command that you used to install. If there&hellip;",
-            "content_html": "<h2 id=\"mcetoc_1e46p373k0\">Using the installer</h2>\n<h3 id=\"mcetoc_1e46p56c01\">Install</h3>\nRun the following command: \n<pre>sh -c \"$(curl -sL https://api.dnsadblock.com/install)\"</pre>\n<h3 id=\"mcetoc_1e46p5rjr2\">Upgrade</h3>\n<p>To upgrade you need to run the same command that you used to install. If there is a new version available, the install script will prompt you to upgrade.</p>\n<h3 id=\"mcetoc_1e46p8b3q3\">Troubleshooting</h3>\n<p>To troubleshoot the installation script you can prefix the command with a debugging flag:</p>\n<pre>DEBUG=1 sh -c \"$(curl -sL https://api.dnsadblock.com/install)\"</pre>\n<h2 id=\"mcetoc_1e46pd2tp4\">Using the official channels</h2>\n<p>Update your repo sources:</p>\n<pre><code>sudo pacman -S yay\nyay -S dnsadblock</code></pre>\n<p>Once installed you can configure it like you would normally do:</p>\n<p>For a workstation:</p>\n<pre><code>sudo dnsadblock install \\\n  -config &lt;your config id&gt; \\\n  -auto-activate</code></pre>\n<p>For a router/server:</p>\n<pre><code>sudo dnsadblock install \\\n  -config &lt;your config id&gt; \\\n  -setup-router</code></pre>",
+            "content_html": "<h2 id=\"mcetoc_1e46p373k0\">Using the installer</h2>\n<h3 id=\"mcetoc_1e46p56c01\">Install</h3>\nRun the following command: \n<pre>sh -c \"$(curl -sL https://api.dnsadblock.com/install)\"</pre>\n<h3 id=\"mcetoc_1e46p5rjr2\">Upgrade</h3>\n<p>To upgrade you need to run the same command that you used to install. If there is a new version available, the install script will prompt you to upgrade.</p>\n<h3 id=\"mcetoc_1e46p8b3q3\">Troubleshooting</h3>\n<p>To troubleshoot the installation script you can prefix the command with a debugging flag:</p>\n<pre>DEBUG=1 sh -c \"$(curl -sL https://api.dnsadblock.com/install)\"</pre>\n<h2 id=\"mcetoc_1e46pd2tp4\">Using the official channels</h2>\n<p>Update your repo sources:</p>\n<pre><code># yay or aurman will work<br>sudo pacman -S yay\nyay -S dnsadblock</code></pre>\n<p>Once installed you can configure it like you would normally do:</p>\n<p>For a workstation:</p>\n<pre><code>sudo dnsadblock install \\\n  -config &lt;your config id&gt; \\\n  -auto-activate</code></pre>\n<p>For a router/server:</p>\n<pre><code>sudo dnsadblock install \\\n  -config &lt;your config id&gt; \\\n  -setup-router</code></pre>",
             "author": {
                 "name": "Romeo Mihalcea"
             },
@@ -124,7 +124,7 @@
                    "arch"
             ],
             "date_published": "2020-03-24T20:17:45+02:00",
-            "date_modified": "2020-03-26T00:26:12+02:00"
+            "date_modified": "2020-03-27T04:37:33+02:00"
         },
         {
             "id": "https://knowledgebase.dnsadblock.com/debian-based-distribution-installation/",

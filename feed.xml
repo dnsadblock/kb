@@ -3,7 +3,7 @@
     <title>DnsAdBlock Knowledgebase</title>
     <link href="https://knowledgebase.dnsadblock.com/feed.xml" rel="self" />
     <link href="https://knowledgebase.dnsadblock.com" />
-    <updated>2020-03-26T10:16:35+02:00</updated>
+    <updated>2020-03-27T04:37:41+02:00</updated>
     <author>
         <name>Romeo Mihalcea</name>
     </author>
@@ -286,7 +286,7 @@ Run the following command: 
             <category term="installation"/>
             <category term="arch"/>
 
-        <updated>2020-03-26T00:26:12+02:00</updated>
+        <updated>2020-03-27T04:37:33+02:00</updated>
             <summary>
                 <![CDATA[
                     Using the installerInstallRun the following command: sh -c "$(curl -sL https://api.dnsadblock.com/install)"UpgradeTo upgrade you need to run the same command that you used to install. If there&hellip;
@@ -305,7 +305,7 @@ Run the following command: 
 <pre>DEBUG=1 sh -c "$(curl -sL https://api.dnsadblock.com/install)"</pre>
 <h2 id="mcetoc_1e46pd2tp4">Using the official channels</h2>
 <p>Update your repo sources:</p>
-<pre><code>sudo pacman -S yay
+<pre><code># yay or aurman will work<br>sudo pacman -S yay
 yay -S dnsadblock</code></pre>
 <p>Once installed you can configure it like you would normally do:</p>
 <p>For a workstation:</p>
