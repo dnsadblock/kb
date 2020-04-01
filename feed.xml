@@ -3,12 +3,46 @@
     <title>DnsAdBlock Knowledgebase</title>
     <link href="https://knowledgebase.dnsadblock.com/feed.xml" rel="self" />
     <link href="https://knowledgebase.dnsadblock.com" />
-    <updated>2020-03-27T04:37:41+02:00</updated>
+    <updated>2020-04-01T23:12:37+03:00</updated>
     <author>
         <name>Romeo Mihalcea</name>
     </author>
     <id>https://knowledgebase.dnsadblock.com</id>
 
+    <entry>
+        <title>Why do I need to link my IP address when creating a connection</title>
+        <author>
+            <name>Romeo Mihalcea</name>
+        </author>
+        <link href="https://knowledgebase.dnsadblock.com/why-do-i-need-to-link-my-ip-address-when-creating-a-connection/"/>
+        <id>https://knowledgebase.dnsadblock.com/why-do-i-need-to-link-my-ip-address-when-creating-a-connection/</id>
+            <category term="howto"/>
+            <category term="dynamic-ip"/>
+            <category term="Frequently asked questions"/>
+
+        <updated>2020-04-01T23:10:49+03:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://knowledgebase.dnsadblock.com/media/posts/13/undraw_Business_analytics_64el.png" alt="" />
+                    <p>In this small article I'm going to show you what is the purpose of the IP address field when creating a new connection and what makes it mandatory.</p>
+
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <img src="https://knowledgebase.dnsadblock.com/media/posts/13/undraw_Business_analytics_64el.png" alt="" />
+                <p>In this small article I'm going to show you what is the purpose of the IP address field when creating a new connection and what makes it mandatory.</p>
+
+<p>When creating or updating a connection you will notice this input field that asks for the "Allowed IP address". For some users, the purpose of this field, remains unclear and we want to address that in this post.</p>
+<p>When using the DNS server without our software, on the port 53 or DOT (dns over tls) we have no way of identifying you other than your IP address. To prevent our servers from abuse and ensure good operating conditions we deny requests from unidentified peers.</p>
+<p class="msg msg--highlight ">The IP address is used to authenticate users only when not using our software or when not connecting via DOH (DNS over HTTPS)</p>
+<p>Our software uses the DOH protocol to secure and anonymize your DNS traffic and the IP address field is ignored because we already receive the connection identifier via url:</p>
+<figure class="post__image"><img src="https://knowledgebase.dnsadblock.com/media/posts/13/download.png" alt="" width="1138" height="106"></figure>
+<p>In this screenshot, we identify the connection with <strong><code>ufi1uvmt</code></strong> and we do not need the incoming IP address any more that's why we encourage you to try and connect using this protocol (when not using our software) to ensure a long running service without interruptions.</p>
+<div> </div>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>EdgeOS installation instructions</title>
         <author>
@@ -417,43 +451,6 @@ sudo yum install -y dnsadblock</code></pre>
   -setup-router</code></pre>
 <h2 id="mcetoc_1e47nkmpg1">Using the GUI</h2>
 <p>If you prefer desktop GUI apps instead of playing with the terminal please head over to our tutorial for the <a href="https://knowledgebase.dnsadblock.com/gui-app-installation-instructions/">desktop application</a>.</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Installing the GUI software</title>
-        <author>
-            <name>Romeo Mihalcea</name>
-        </author>
-        <link href="https://knowledgebase.dnsadblock.com/gui-app-installation-instructions/"/>
-        <id>https://knowledgebase.dnsadblock.com/gui-app-installation-instructions/</id>
-            <category term="windows"/>
-            <category term="rpm"/>
-            <category term="linux"/>
-            <category term="install"/>
-            <category term="gui"/>
-            <category term="dns"/>
-            <category term="debian"/>
-
-        <updated>2020-03-25T04:08:15+02:00</updated>
-            <summary>
-                <![CDATA[
-                        <img src="https://knowledgebase.dnsadblock.com/media/posts/3/undraw_noted_pc9f.png" alt="DnsAdBlock GUI software installation tutorial" />
-                    For Windows, Linux (Debian or RPM based distros) you can install and use our GUI software which does the heavy lifting of starting and managing&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                    <img src="https://knowledgebase.dnsadblock.com/media/posts/3/undraw_noted_pc9f.png" alt="DnsAdBlock GUI software installation tutorial" />
-                <p>For Windows, Linux (Debian or RPM based distros) you can install and use our GUI software which does the heavy lifting of starting and managing the proxy server, updating your adapter settings to tunnel DNS traffic and applying the required configs; all with a single click.</p>
-<p>You can download the GUI software by accessing the <strong><a href="https://dnsadblock.com/app/download" target="_blank" rel="noopener noreferrer">Download</a></strong> page on your dashboard.</p>
-<p class="blockParagraph-544a408c"  ><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span >Once installed you will be presented with a form where you must enter your api key (you can find that under your profile: <strong class="bold-3c254bd9" >My account </strong>&gt;<strong class="bold-3c254bd9" > Profile</strong>). We thought it would be easier to copy and paste an API key as opposed to having to remember the username/password combo.</span></span></p>
-<figure class="post__image"><img src="https://knowledgebase.dnsadblock.com/media/posts/3/Screenshot-from-2020-01-27-06-17-08.png" alt="" width="940" height="551"></figure>
-<p class="blockParagraph-544a408c" ><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span >After adding you API key the app will display a small dashboard which lists your connections. You can click on any of the connections, hit <strong>Connect</strong> and the app will bring up the <strong>DnsAdBlock</strong> adapter. </span></span></p>
-<p ><img class="post__image" src="https://knowledgebase.dnsadblock.com/media/posts/3/windows-app.png" alt="" width="1000" height="650"></p>
-<div  >
-<figure class="post__image"><img src="https://knowledgebase.dnsadblock.com/media/posts/3/windows-app-connected.png" alt="" width="1000" height="650"></figure>
-</div>
             ]]>
         </content>
     </entry>
