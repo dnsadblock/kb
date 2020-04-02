@@ -3,12 +3,46 @@
     <title>DnsAdBlock Knowledgebase</title>
     <link href="https://knowledgebase.dnsadblock.com/feed.xml" rel="self" />
     <link href="https://knowledgebase.dnsadblock.com" />
-    <updated>2020-04-02T16:06:26+03:00</updated>
+    <updated>2020-04-02T16:26:52+03:00</updated>
     <author>
         <name>Romeo Mihalcea</name>
     </author>
     <id>https://knowledgebase.dnsadblock.com</id>
 
+    <entry>
+        <title>Our Home plan is now free</title>
+        <author>
+            <name>Romeo Mihalcea</name>
+        </author>
+        <link href="https://knowledgebase.dnsadblock.com/our-home-plan-is-now-free/"/>
+        <id>https://knowledgebase.dnsadblock.com/our-home-plan-is-now-free/</id>
+            <category term="Announcements"/>
+
+        <updated>2020-04-02T16:26:44+03:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://knowledgebase.dnsadblock.com/media/posts/14/undraw_redesign_feedback_48ti.png" alt="" />
+                    <p>After a careful study of the current market and many considerations we decided to change our entry plan (Home) and make it available for free.</p>
+
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <img src="https://knowledgebase.dnsadblock.com/media/posts/14/undraw_redesign_feedback_48ti.png" alt="" />
+                <p>After a careful study of the current market and many considerations we decided to change our entry plan (Home) and make it available for free.</p>
+
+<p>This plan will have some new limits added to it to ensure we're able to keep our services safe from abusers:</p>
+<ul>
+<li>Total monthly queries (allowed, denied) limited to <strong>200,000</strong>. That's almost <strong>7,000</strong> daily requests allowed</li>
+<li>Once the limit is reached we allow for another <strong>100,000</strong> requests that go unfiltered (forwarded to upstreams right away) (just like any other DNS server)</li>
+<li>Once the <strong>100k</strong> also exhausted we start denying requests and encourage users to upgrade</li>
+<li>Max configurations allowed for the free plan is <strong>3</strong></li>
+<li>Max user custom rules (allowed+denied) limited to <strong>100</strong></li>
+</ul>
+<p>This is a much needed and requested feature and we're confident it will lead to a rise in signups since no payment commitment is required to start using our service.</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Why do I need to link my IP address when creating a connection</title>
         <author>
@@ -397,55 +431,6 @@ sudo apt install dnsadblock</code></pre>
   -config &lt;your config id&gt; \
   -auto-activate</code></pre>
 <p>For a router/server:</p>
-<pre><code>sudo dnsadblock install \
-  -config &lt;your config id&gt; \
-  -setup-router</code></pre>
-<h2 id="mcetoc_1e47nkmpg1">Using the GUI</h2>
-<p>If you prefer desktop GUI apps instead of playing with the terminal please head over to our tutorial for the <a href="https://knowledgebase.dnsadblock.com/gui-app-installation-instructions/">desktop application</a>.</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>RPM Based Distribution installation</title>
-        <author>
-            <name>Romeo Mihalcea</name>
-        </author>
-        <link href="https://knowledgebase.dnsadblock.com/rpm-based-distribution-installation/"/>
-        <id>https://knowledgebase.dnsadblock.com/rpm-based-distribution-installation/</id>
-            <category term="rpm"/>
-            <category term="installation"/>
-            <category term="fedora"/>
-
-        <updated>2020-03-26T00:26:34+02:00</updated>
-            <summary>
-                <![CDATA[
-                    <p>For RPM based Linux operating systems we have 3 options. Pick the option that fits well for your scenario.</p>
-
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>For RPM based Linux operating systems we have 3 options. Pick the option that fits well for your scenario.</p>
-
-<h2 id="mcetoc_1e46p373k0">Using the installer</h2>
-<h3 id="mcetoc_1e46p56c01">Install</h3>
-Run the following command: 
-<pre>sh -c "$(curl -sL https://api.dnsadblock.com/install)"</pre>
-<h3 id="mcetoc_1e46p5rjr2">Upgrade</h3>
-<p>To upgrade you need to run the same command that you used to install. If there is a new version available, the install script will prompt you to upgrade.</p>
-<h3 id="mcetoc_1e46p8b3q3">Troubleshooting</h3>
-<p>To troubleshoot the installation script you can prefix the command with a debugging flag:</p>
-<pre>DEBUG=1 sh -c "$(curl -sL https://api.dnsadblock.com/install)"</pre>
-<h2 id="mcetoc_1e46pd2tp4">Using the official channels</h2>
-<p>Update your repo sources:</p>
-<pre><code>sudo curl -s https://dnsadblock.com/yum.repo -o /etc/yum.repos.d/dnsadblock.repo
-sudo yum install -y dnsadblock</code></pre>
-<p>Once installed you can configure it like you would normally do:</p>
-<p>For a workstation:</p>
-<pre><code>sudo dnsadblock install \
-  -config &lt;your config id&gt; \
-  -auto-activate</code></pre>
-<p>For a router/server</p>
 <pre><code>sudo dnsadblock install \
   -config &lt;your config id&gt; \
   -setup-router</code></pre>

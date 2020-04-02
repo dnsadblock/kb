@@ -11,6 +11,22 @@
     },
     "items": [
         {
+            "id": "https://knowledgebase.dnsadblock.com/our-home-plan-is-now-free/",
+            "url": "https://knowledgebase.dnsadblock.com/our-home-plan-is-now-free/",
+            "title": "Our Home plan is now free",
+            "summary": "<p>After a careful study of the current market and many considerations we decided to change our entry plan (Home) and make it available for free.</p>\n",
+            "content_html": "<p>After a careful study of the current market and many considerations we decided to change our entry plan (Home) and make it available for free.</p>\n\n<p>This plan will have some new limits added to it to ensure we're able to keep our services safe from abusers:</p>\n<ul>\n<li>Total monthly queries (allowed, denied) limited to <strong>200,000</strong>. That's almost <strong>7,000</strong> daily requests allowed</li>\n<li>Once the limit is reached we allow for another <strong>100,000</strong> requests that go unfiltered (forwarded to upstreams right away) (just like any other DNS server)</li>\n<li>Once the <strong>100k</strong> also exhausted we start denying requests and encourage users to upgrade</li>\n<li>Max configurations allowed for the free plan is <strong>3</strong></li>\n<li>Max user custom rules (allowed+denied) limited to <strong>100</strong></li>\n</ul>\n<p>This is a much needed and requested feature and we're confident it will lead to a rise in signups since no payment commitment is required to start using our service.</p>",
+            "image": "https://knowledgebase.dnsadblock.com/media/posts/14/undraw_redesign_feedback_48ti.png",
+            "author": {
+                "name": "Romeo Mihalcea"
+            },
+            "tags": [
+                   "Announcements"
+            ],
+            "date_published": "2020-04-02T16:23:23+03:00",
+            "date_modified": "2020-04-02T16:26:44+03:00"
+        },
+        {
             "id": "https://knowledgebase.dnsadblock.com/why-do-i-need-to-link-my-ip-address-when-creating-a-connection/",
             "url": "https://knowledgebase.dnsadblock.com/why-do-i-need-to-link-my-ip-address-when-creating-a-connection/",
             "title": "Why do I need to link my IP address when creating a connection",
@@ -160,23 +176,6 @@
             ],
             "date_published": "2020-03-24T19:33:56+02:00",
             "date_modified": "2020-03-26T00:27:15+02:00"
-        },
-        {
-            "id": "https://knowledgebase.dnsadblock.com/rpm-based-distribution-installation/",
-            "url": "https://knowledgebase.dnsadblock.com/rpm-based-distribution-installation/",
-            "title": "RPM Based Distribution installation",
-            "summary": "<p>For RPM based Linux operating systems we have 3 options. Pick the option that fits well for your scenario.</p>\n",
-            "content_html": "<p>For RPM based Linux operating systems we have 3 options. Pick the option that fits well for your scenario.</p>\n\n<h2 id=\"mcetoc_1e46p373k0\">Using the installer</h2>\n<h3 id=\"mcetoc_1e46p56c01\">Install</h3>\nRun the following command: \n<pre>sh -c \"$(curl -sL https://api.dnsadblock.com/install)\"</pre>\n<h3 id=\"mcetoc_1e46p5rjr2\">Upgrade</h3>\n<p>To upgrade you need to run the same command that you used to install. If there is a new version available, the install script will prompt you to upgrade.</p>\n<h3 id=\"mcetoc_1e46p8b3q3\">Troubleshooting</h3>\n<p>To troubleshoot the installation script you can prefix the command with a debugging flag:</p>\n<pre>DEBUG=1 sh -c \"$(curl -sL https://api.dnsadblock.com/install)\"</pre>\n<h2 id=\"mcetoc_1e46pd2tp4\">Using the official channels</h2>\n<p>Update your repo sources:</p>\n<pre><code>sudo curl -s https://dnsadblock.com/yum.repo -o /etc/yum.repos.d/dnsadblock.repo\nsudo yum install -y dnsadblock</code></pre>\n<p>Once installed you can configure it like you would normally do:</p>\n<p>For a workstation:</p>\n<pre><code>sudo dnsadblock install \\\n  -config &lt;your config id&gt; \\\n  -auto-activate</code></pre>\n<p>For a router/server</p>\n<pre><code>sudo dnsadblock install \\\n  -config &lt;your config id&gt; \\\n  -setup-router</code></pre>\n<h2 id=\"mcetoc_1e47nkmpg1\">Using the GUI</h2>\n<p>If you prefer desktop GUI apps instead of playing with the terminal please head over to our tutorial for the <a href=\"https://knowledgebase.dnsadblock.com/gui-app-installation-instructions/\">desktop application</a>.</p>",
-            "author": {
-                "name": "Romeo Mihalcea"
-            },
-            "tags": [
-                   "rpm",
-                   "installation",
-                   "fedora"
-            ],
-            "date_published": "2020-03-24T19:31:49+02:00",
-            "date_modified": "2020-03-26T00:26:34+02:00"
         }
     ]
 }
