@@ -3,7 +3,7 @@
     <title>DnsAdBlock Knowledgebase</title>
     <link href="https://knowledgebase.dnsadblock.com/feed.xml" rel="self" />
     <link href="https://knowledgebase.dnsadblock.com" />
-    <updated>2020-04-19T17:22:03+03:00</updated>
+    <updated>2020-04-19T17:23:14+03:00</updated>
     <author>
         <name>Romeo Mihalcea</name>
     </author>
@@ -20,7 +20,7 @@
             <category term="proxy"/>
             <category term="Announcements"/>
 
-        <updated>2020-04-19T16:43:02+03:00</updated>
+        <updated>2020-04-19T17:23:10+03:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://knowledgebase.dnsadblock.com/media/posts/15/undraw_authentication_fsn5.png" alt="" />
@@ -34,7 +34,7 @@
                 <p>Our proxy application now supports proxying DOH (DNS over HTTPS) requests through a HTTP or SOCKS5 proxy.</p>
 
 <p>Happy to announce that we just pushed an update which allows you to proxy the http communication with our servers using proxies, both <strong>HTTP</strong> and <strong>SOCKS5</strong>. This change is addressed to combat firewalls that attempt to block communication to and from our servers by blacklisting our addresses.</p>
-<p>The configuration is simple. We added an extra flag to our console application <code>-proxy-address</code> and you can use it with a full proxy address which supports authentication as well:</p>
+<p>The configuration is simple. We added <a href="https://knowledgebase.dnsadblock.com/how-to-install-and-configure-our-software/">an extra flag</a> to our console application <code>-proxy-address</code> and you can use it with a full proxy address which supports authentication as well:</p>
 <ul>
 <li><code>socks5://host:port</code></li>
 <li><code>socks5://username:password@host:port</code></li>
