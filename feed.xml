@@ -3,7 +3,7 @@
     <title>DnsAdBlock Knowledgebase</title>
     <link href="https://knowledgebase.dnsadblock.com/feed.xml" rel="self" />
     <link href="https://knowledgebase.dnsadblock.com" />
-    <updated>2020-04-16T23:09:42+03:00</updated>
+    <updated>2020-04-19T05:04:44+03:00</updated>
     <author>
         <name>Romeo Mihalcea</name>
     </author>
@@ -398,7 +398,7 @@ yay -S dnsadblock</code></pre>
             <category term="installation"/>
             <category term="debian"/>
 
-        <updated>2020-03-26T00:27:15+02:00</updated>
+        <updated>2020-04-19T05:04:39+03:00</updated>
             <summary>
                 <![CDATA[
                     <p>For debian-based operating systems we have 3 options. Pick the one that suits your scenario best.</p>
@@ -420,8 +420,8 @@ Run the following command: 
 <pre>DEBUG=1 sh -c "$(curl -sL https://api.dnsadblock.com/install)"</pre>
 <h2 id="mcetoc_1e46pd2tp4">Using the official channels</h2>
 <p>Update your repo sources:</p>
-<pre><code>wget -qO - https://dnsadblock.com/repo.gpg | sudo apt-key add -
-echo "deb https://dnsadblock.com/repo/deb stable main" | sudo tee /etc/apt/sources.list.d/dnsadblock.list
+<pre><code>wget -qO - https://api.dnsadblock.com/repo.gpg | sudo apt-key add -
+echo "deb https://api.dnsadblock.com/repo/deb stable main" | sudo tee /etc/apt/sources.list.d/dnsadblock.list
 sudo apt install apt-transport-https # only necessary on Debian
 sudo apt update
 sudo apt install dnsadblock</code></pre>
