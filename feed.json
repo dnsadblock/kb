@@ -11,6 +11,24 @@
     },
     "items": [
         {
+            "id": "https://knowledgebase.dnsadblock.com/dns-queries-through-socks5-or-http-proxy/",
+            "url": "https://knowledgebase.dnsadblock.com/dns-queries-through-socks5-or-http-proxy/",
+            "title": "DNS queries through SOCKS5 or HTTP proxy",
+            "summary": "<p>Our proxy application now supports proxying DOH (DNS over HTTPS) requests through a HTTP or SOCKS5 proxy.</p>\n",
+            "content_html": "<p>Our proxy application now supports proxying DOH (DNS over HTTPS) requests through a HTTP or SOCKS5 proxy.</p>\n\n<p>Happy to announce that we just pushed an update which allows you to proxy the http communication with our servers using proxies, both <strong>HTTP</strong> and <strong>SOCKS5</strong>. This change is addressed to combat firewalls that attempt to block communication to and from our servers by blacklisting our addresses.</p>\n<p>The configuration is simple. We added an extra flag to our console application <code>-proxy-address</code> and you can use it with a full proxy address which supports authentication as well:</p>\n<ul>\n<li><code>socks5://host:port</code></li>\n<li><code>socks5://username:password@host:port</code></li>\n<li><code>http://host:port</code></li>\n<li><code>http://username:password@host:port</code></li>\n</ul>\n<p>As expected, using a proxy adds latency to the responses.</p>",
+            "image": "https://knowledgebase.dnsadblock.com/media/posts/15/undraw_authentication_fsn5.png",
+            "author": {
+                "name": "Romeo Mihalcea"
+            },
+            "tags": [
+                   "socks5",
+                   "proxy",
+                   "Announcements"
+            ],
+            "date_published": "2020-04-19T16:43:02+03:00",
+            "date_modified": "2020-04-19T16:43:02+03:00"
+        },
+        {
             "id": "https://knowledgebase.dnsadblock.com/our-home-plan-is-now-free/",
             "url": "https://knowledgebase.dnsadblock.com/our-home-plan-is-now-free/",
             "title": "Our Home plan is now free",
@@ -159,23 +177,6 @@
             ],
             "date_published": "2020-03-24T20:17:45+02:00",
             "date_modified": "2020-03-27T04:37:33+02:00"
-        },
-        {
-            "id": "https://knowledgebase.dnsadblock.com/debian-based-distribution-installation/",
-            "url": "https://knowledgebase.dnsadblock.com/debian-based-distribution-installation/",
-            "title": "Debian based distribution installation",
-            "summary": "<p>For debian-based operating systems we have 3 options. Pick the one that suits your scenario best.</p>\n",
-            "content_html": "<p>For debian-based operating systems we have 3 options. Pick the one that suits your scenario best.</p>\n\n<h2 id=\"mcetoc_1e46p373k0\">Using the installer</h2>\n<h3 id=\"mcetoc_1e46p56c01\">Install</h3>\nRun the following command: \n<pre>sh -c \"$(curl -sL https://api.dnsadblock.com/install)\"</pre>\n<h3 id=\"mcetoc_1e46p5rjr2\">Upgrade</h3>\n<p>To upgrade you need to run the same command that you used to install. If there is a new version available, the install script will prompt you to upgrade.</p>\n<h3 id=\"mcetoc_1e46p8b3q3\">Troubleshooting</h3>\n<p>To troubleshoot the installation script you can prefix the command with a debugging flag:</p>\n<pre>DEBUG=1 sh -c \"$(curl -sL https://api.dnsadblock.com/install)\"</pre>\n<h2 id=\"mcetoc_1e46pd2tp4\">Using the official channels</h2>\n<p>Update your repo sources:</p>\n<pre><code>wget -qO - https://api.dnsadblock.com/repo.gpg | sudo apt-key add -\necho \"deb https://api.dnsadblock.com/repo/deb stable main\" | sudo tee /etc/apt/sources.list.d/dnsadblock.list\nsudo apt install apt-transport-https # only necessary on Debian\nsudo apt update\nsudo apt install dnsadblock</code></pre>\n<p>Once installed you can configure it like you would normally do:</p>\n<p>For a workstation:</p>\n<pre><code>sudo dnsadblock install \\\n  -config &lt;your config id&gt; \\\n  -auto-activate</code></pre>\n<p>For a router/server:</p>\n<pre><code>sudo dnsadblock install \\\n  -config &lt;your config id&gt; \\\n  -setup-router</code></pre>\n<h2 id=\"mcetoc_1e47nkmpg1\">Using the GUI</h2>\n<p>If you prefer desktop GUI apps instead of playing with the terminal please head over to our tutorial for the <a href=\"https://knowledgebase.dnsadblock.com/gui-app-installation-instructions/\">desktop application</a>.</p>",
-            "author": {
-                "name": "Romeo Mihalcea"
-            },
-            "tags": [
-                   "ubuntu",
-                   "installation",
-                   "debian"
-            ],
-            "date_published": "2020-03-24T19:33:56+02:00",
-            "date_modified": "2020-04-19T05:04:39+03:00"
         }
     ]
 }
