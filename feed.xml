@@ -3,12 +3,47 @@
     <title>DnsAdBlock Knowledgebase</title>
     <link href="https://knowledgebase.dnsadblock.com/feed.xml" rel="self" />
     <link href="https://knowledgebase.dnsadblock.com" />
-    <updated>2020-04-19T17:23:14+03:00</updated>
+    <updated>2020-04-21T17:32:41+03:00</updated>
     <author>
         <name>Romeo Mihalcea</name>
     </author>
     <id>https://knowledgebase.dnsadblock.com</id>
 
+    <entry>
+        <title>What are network devices</title>
+        <author>
+            <name>Romeo Mihalcea</name>
+        </author>
+        <link href="https://knowledgebase.dnsadblock.com/what-are-network-devices/"/>
+        <id>https://knowledgebase.dnsadblock.com/what-are-network-devices/</id>
+            <category term="Frequently asked questions"/>
+
+        <updated>2020-04-21T17:32:36+03:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://knowledgebase.dnsadblock.com/media/posts/16/undraw_online_transactions_02ka.png" alt="" />
+                    <p>The network devices are individual devices discovered in your network. Their information is sent to us only when dnsadblock is installed on a router/switch that acts as a gateway in your network.</p>
+
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <img src="https://knowledgebase.dnsadblock.com/media/posts/16/undraw_online_transactions_02ka.png" alt="" />
+                <p>The network devices are individual devices discovered in your network. Their information is sent to us only when dnsadblock is installed on a router/switch that acts as a gateway in your network.</p>
+
+<p>When running in router mode, our software is able to "discover" devices on your network and pull some information available. For each DNS request that we forward to our servers we also attach this info via http headers. If the server receives device information it adds it to the logs so we can parse them later and extract and group everything based on such metadata.</p>
+<p>The ability to view activity based on device is important in all situations and for a big number of reasons.</p>
+<p class="msg msg--highlight ">If dnsadblock is executed from the desktop app (and not installed on a gateway/router/switch) the devices discovery is not possible/performed so you won't see anything in the list inside your Dasnboard.</p>
+<p>If you're accessing the DOH endpoint using other software and still wish to send out device info you can use the following http headers for each request:</p>
+<ul>
+<li><code>X-Device-Id</code></li>
+<li><code>X-Device-Ip</code></li>
+<li><code>X-Device-Model</code></li>
+<li><code>X-Device-Name</code></li>
+</ul>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>DNS queries through SOCKS5 or HTTP proxy</title>
         <author>
@@ -377,49 +412,6 @@ Run the following command: 
 <h3 id="mcetoc_1e46p8b3q3">Troubleshooting</h3>
 <p>To troubleshoot the installation script you can prefix the command with a debugging flag:</p>
 <pre>DEBUG=1 sh -c "$(curl -sL https://api.dnsadblock.com/install)"</pre>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Arch Based distribution installation</title>
-        <author>
-            <name>Romeo Mihalcea</name>
-        </author>
-        <link href="https://knowledgebase.dnsadblock.com/ach-based-distribution-installation/"/>
-        <id>https://knowledgebase.dnsadblock.com/ach-based-distribution-installation/</id>
-            <category term="installation"/>
-            <category term="arch"/>
-
-        <updated>2020-03-27T04:37:33+02:00</updated>
-            <summary>
-                <![CDATA[
-                    Using the installerInstallRun the following command: sh -c "$(curl -sL https://api.dnsadblock.com/install)"UpgradeTo upgrade you need to run the same command that you used to install. If there&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <h2 id="mcetoc_1e46p373k0">Using the installer</h2>
-<h3 id="mcetoc_1e46p56c01">Install</h3>
-Run the following command: 
-<pre>sh -c "$(curl -sL https://api.dnsadblock.com/install)"</pre>
-<h3 id="mcetoc_1e46p5rjr2">Upgrade</h3>
-<p>To upgrade you need to run the same command that you used to install. If there is a new version available, the install script will prompt you to upgrade.</p>
-<h3 id="mcetoc_1e46p8b3q3">Troubleshooting</h3>
-<p>To troubleshoot the installation script you can prefix the command with a debugging flag:</p>
-<pre>DEBUG=1 sh -c "$(curl -sL https://api.dnsadblock.com/install)"</pre>
-<h2 id="mcetoc_1e46pd2tp4">Using the official channels</h2>
-<p>Update your repo sources:</p>
-<pre><code># yay or aurman will work<br>sudo pacman -S yay
-yay -S dnsadblock</code></pre>
-<p>Once installed you can configure it like you would normally do:</p>
-<p>For a workstation:</p>
-<pre><code>sudo dnsadblock install \
-  -config &lt;your config id&gt; \
-  -auto-activate</code></pre>
-<p>For a router/server:</p>
-<pre><code>sudo dnsadblock install \
-  -config &lt;your config id&gt; \
-  -setup-router</code></pre>
             ]]>
         </content>
     </entry>
