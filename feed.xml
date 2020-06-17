@@ -3,7 +3,7 @@
     <title>DnsAdBlock Knowledgebase</title>
     <link href="https://knowledgebase.dnsadblock.com/feed.xml" rel="self" />
     <link href="https://knowledgebase.dnsadblock.com" />
-    <updated>2020-06-18T01:53:08+03:00</updated>
+    <updated>2020-06-18T02:17:42+03:00</updated>
     <author>
         <name>Romeo Mihalcea</name>
     </author>
@@ -189,7 +189,7 @@
             <category term="dynamic-ip"/>
             <category term="Frequently asked questions"/>
 
-        <updated>2020-06-18T01:49:35+03:00</updated>
+        <updated>2020-06-18T02:17:13+03:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://knowledgebase.dnsadblock.com/media/posts/11/undraw_version_control_9bpv.png" alt="" />
@@ -212,12 +212,10 @@
 <li>the dynamic DNS service update a hostname that was assigned to you</li>
 <li>we monitor that hostname and, when its A record changes, we also trigger an update on our part with the new IP address</li>
 </ul>
-<div class="gallery gallery-wrapper--full"   >
-<figure class="gallery__item"><a href="https://knowledgebase.dnsadblock.com/media/posts/11/gallery/Linksys-DDNS-No-IP-1024x723.png" ><img src="https://knowledgebase.dnsadblock.com/media/posts/11/gallery/Linksys-DDNS-No-IP-1024x723-thumbnail.png" alt="" width="240" height="240"></a></figure>
-<figure class="gallery__item"><a href="https://knowledgebase.dnsadblock.com/media/posts/11/gallery/Asus-DDNS-No-IP.png" ><img src="https://knowledgebase.dnsadblock.com/media/posts/11/gallery/Asus-DDNS-No-IP-thumbnail.png" alt="" width="240" height="240"></a></figure>
-<figure class="gallery__item"><a href="https://knowledgebase.dnsadblock.com/media/posts/11/gallery/TP-Link-DDNS-No-IP.png" ><img src="https://knowledgebase.dnsadblock.com/media/posts/11/gallery/TP-Link-DDNS-No-IP-thumbnail.png" alt="" width="240" height="240"></a></figure>
-<figure class="gallery__item"><a href="https://knowledgebase.dnsadblock.com/media/posts/11/gallery/Netgear-DDNS-No-IP.png" ><img src="https://knowledgebase.dnsadblock.com/media/posts/11/gallery/Netgear-DDNS-No-IP-thumbnail.png" alt="" width="240" height="240"></a></figure>
-</div>
+<p><img class="post__image" src="https://knowledgebase.dnsadblock.com/media/posts/11/Linksys-DDNS-No-IP-1024x723.png" alt="" width="1024" height="723"></p>
+<p><img class="post__image" src="https://knowledgebase.dnsadblock.com/media/posts/11/Asus-DDNS-No-IP-2.png" alt="" width="2002" height="1388"></p>
+<p><img class="post__image" src="https://knowledgebase.dnsadblock.com/media/posts/11/TP-Link-DDNS-No-IP.png" alt="" width="2030" height="1400"></p>
+<p><img class="post__image" src="https://knowledgebase.dnsadblock.com/media/posts/11/Netgear-DDNS-No-IP-3.png" alt="" width="1862" height="1308"></p>
 <p>We query for record changes at every 2 minutes so we should be picking up the new IP address fairly quickly.</p>
 <p><code><strong>This is our recommended way for routers!</strong></code></p>
 <h2 id="mcetoc_1e4762pif1">Update it programatically using our API</h2>

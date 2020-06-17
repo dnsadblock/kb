@@ -499,4 +499,24 @@ window.addEventListener('scroll', function (e) {
     }
 })();
 
+// DocSearch fix for Safari with overflow issue
+const sidebar = document.querySelector(".js-sidebar");
+      input = document.querySelector('.js-search')
 
+input.addEventListener('input', evt => {
+    const value = input.value
+
+    if (!value) {
+        sidebar.classList.remove("no-overflow");
+        document.documentElement.classList.remove("no-scroll")
+        return
+    }
+    const trimmed = value.trim()
+    if (trimmed) {
+        sidebar.classList.add("no-overflow");
+        document.documentElement.classList.add("no-scroll")
+    } else {
+        sidebar.classList.remove("no-overflow");
+        document.documentElement.classList.remove("no-scroll")
+    }
+})
