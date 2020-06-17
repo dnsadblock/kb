@@ -3,7 +3,7 @@
     <title>DnsAdBlock Knowledgebase</title>
     <link href="https://knowledgebase.dnsadblock.com/feed.xml" rel="self" />
     <link href="https://knowledgebase.dnsadblock.com" />
-    <updated>2020-04-21T17:32:41+03:00</updated>
+    <updated>2020-06-18T01:53:08+03:00</updated>
     <author>
         <name>Romeo Mihalcea</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://knowledgebase.dnsadblock.com/what-are-network-devices/</id>
             <category term="Frequently asked questions"/>
 
-        <updated>2020-04-21T17:32:36+03:00</updated>
+        <updated>2020-04-25T14:42:37+03:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://knowledgebase.dnsadblock.com/media/posts/16/undraw_online_transactions_02ka.png" alt="" />
@@ -189,7 +189,7 @@
             <category term="dynamic-ip"/>
             <category term="Frequently asked questions"/>
 
-        <updated>2020-03-24T23:13:37+02:00</updated>
+        <updated>2020-06-18T01:49:35+03:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://knowledgebase.dnsadblock.com/media/posts/11/undraw_version_control_9bpv.png" alt="" />
@@ -204,6 +204,22 @@
 <h2 id="mcetoc_1e475v6as0">Update it manually in your connections page</h2>
 <p>The easiest solution is to go to your dashboard, find your connection and update the allowed address:</p>
 <figure class="post__image"><img src="https://knowledgebase.dnsadblock.com/media/posts/11/screenshot-dnsadblock.com-2020.03.24-23_08_47.png" alt="" width="535" height="425"></figure>
+<p>This feature is not recommended unless you wish to test things out or if you use our DNS servers on a single device. If used on a router, all connected devices will lose internet connection until the update is manually performed.</p>
+<h2>Using a dynamic DNS service such as DynDNS or NoIp</h2>
+<p>Highly recommended because most routers support this feature. The gist of it is this one:</p>
+<ul style="list-style-type: square;">
+<li>on IP change your router notifies the dynamic DNS service</li>
+<li>the dynamic DNS service update a hostname that was assigned to you</li>
+<li>we monitor that hostname and, when its A record changes, we also trigger an update on our part with the new IP address</li>
+</ul>
+<div class="gallery gallery-wrapper--full"   >
+<figure class="gallery__item"><a href="https://knowledgebase.dnsadblock.com/media/posts/11/gallery/Linksys-DDNS-No-IP-1024x723.png" ><img src="https://knowledgebase.dnsadblock.com/media/posts/11/gallery/Linksys-DDNS-No-IP-1024x723-thumbnail.png" alt="" width="240" height="240"></a></figure>
+<figure class="gallery__item"><a href="https://knowledgebase.dnsadblock.com/media/posts/11/gallery/Asus-DDNS-No-IP.png" ><img src="https://knowledgebase.dnsadblock.com/media/posts/11/gallery/Asus-DDNS-No-IP-thumbnail.png" alt="" width="240" height="240"></a></figure>
+<figure class="gallery__item"><a href="https://knowledgebase.dnsadblock.com/media/posts/11/gallery/TP-Link-DDNS-No-IP.png" ><img src="https://knowledgebase.dnsadblock.com/media/posts/11/gallery/TP-Link-DDNS-No-IP-thumbnail.png" alt="" width="240" height="240"></a></figure>
+<figure class="gallery__item"><a href="https://knowledgebase.dnsadblock.com/media/posts/11/gallery/Netgear-DDNS-No-IP.png" ><img src="https://knowledgebase.dnsadblock.com/media/posts/11/gallery/Netgear-DDNS-No-IP-thumbnail.png" alt="" width="240" height="240"></a></figure>
+</div>
+<p>We query for record changes at every 2 minutes so we should be picking up the new IP address fairly quickly.</p>
+<p><code><strong>This is our recommended way for routers!</strong></code></p>
 <h2 id="mcetoc_1e4762pif1">Update it programatically using our API</h2>
 <p><span >All our endpoints are API accessible and updating your connection is easily doable using a simple </span><span ><code class="code-81e98f88" spellcheck="false" >GET</code></span><span  > request.</span></p>
 <p><span >Our API requires authentication so make sure you grab a copy of your API token before attempting to call any endpoints</span></p>
