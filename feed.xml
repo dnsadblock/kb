@@ -3,7 +3,7 @@
     <title>DnsAdBlock Knowledgebase</title>
     <link href="https://knowledgebase.dnsadblock.com/feed.xml" rel="self" />
     <link href="https://knowledgebase.dnsadblock.com" />
-    <updated>2020-06-18T03:19:57+03:00</updated>
+    <updated>2020-06-18T03:21:52+03:00</updated>
     <author>
         <name>Romeo Mihalcea</name>
     </author>
@@ -189,7 +189,7 @@
             <category term="dynamic-ip"/>
             <category term="Frequently asked questions"/>
 
-        <updated>2020-06-18T03:19:52+03:00</updated>
+        <updated>2020-06-18T03:21:48+03:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://knowledgebase.dnsadblock.com/media/posts/11/undraw_version_control_9bpv.png" alt="" />
@@ -211,7 +211,7 @@
 <p>The gist of it is this one:</p>
 <ul style="list-style-type: square;">
 <li>on IP change your router notifies the dynamic DNS service</li>
-<li>the dynamic DNS service update a hostname that was assigned to you</li>
+<li>the dynamic DNS service updates a hostname that was assigned to you</li>
 <li>we monitor that hostname and, when its A record changes, we also trigger an update on our part with the new IP address</li>
 </ul>
 <p><img class="post__image" src="https://knowledgebase.dnsadblock.com/media/posts/11/Linksys-DDNS-No-IP-1024x723.png" alt="" width="1024" height="723"></p>
