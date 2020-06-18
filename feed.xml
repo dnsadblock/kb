@@ -3,7 +3,7 @@
     <title>DnsAdBlock Knowledgebase</title>
     <link href="https://knowledgebase.dnsadblock.com/feed.xml" rel="self" />
     <link href="https://knowledgebase.dnsadblock.com" />
-    <updated>2020-06-18T02:17:42+03:00</updated>
+    <updated>2020-06-18T03:19:57+03:00</updated>
     <author>
         <name>Romeo Mihalcea</name>
     </author>
@@ -189,7 +189,7 @@
             <category term="dynamic-ip"/>
             <category term="Frequently asked questions"/>
 
-        <updated>2020-06-18T02:17:13+03:00</updated>
+        <updated>2020-06-18T03:19:52+03:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://knowledgebase.dnsadblock.com/media/posts/11/undraw_version_control_9bpv.png" alt="" />
@@ -206,7 +206,9 @@
 <figure class="post__image"><img src="https://knowledgebase.dnsadblock.com/media/posts/11/screenshot-dnsadblock.com-2020.03.24-23_08_47.png" alt="" width="535" height="425"></figure>
 <p>This feature is not recommended unless you wish to test things out or if you use our DNS servers on a single device. If used on a router, all connected devices will lose internet connection until the update is manually performed.</p>
 <h2>Using a dynamic DNS service such as DynDNS or NoIp</h2>
-<p>Highly recommended because most routers support this feature. The gist of it is this one:</p>
+<p>Highly recommended because most routers support this feature. Each configuration has a field called <code>Dynamic DNS hostname</code> which can be used to store a hostname which gets updated by services such as DynDNS or NoIP. Most routers have this functionality (even the locked ones):</p>
+<p><img class="post__image" src="https://knowledgebase.dnsadblock.com/media/posts/11/screenshot-dnsadblock.com-2020.06.18-03_18_54.png" alt="" width="1109" height="250"></p>
+<p>The gist of it is this one:</p>
 <ul style="list-style-type: square;">
 <li>on IP change your router notifies the dynamic DNS service</li>
 <li>the dynamic DNS service update a hostname that was assigned to you</li>
