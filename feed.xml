@@ -3,7 +3,7 @@
     <title>DnsAdBlock Knowledgebase</title>
     <link href="https://knowledgebase.dnsadblock.com/feed.xml" rel="self" />
     <link href="https://knowledgebase.dnsadblock.com" />
-    <updated>2020-06-24T18:58:41+03:00</updated>
+    <updated>2020-06-24T19:03:46+03:00</updated>
     <author>
         <name>Romeo Mihalcea</name>
     </author>
@@ -19,7 +19,7 @@
             <category term="device"/>
             <category term="Frequently asked questions"/>
 
-        <updated>2020-06-24T18:58:37+03:00</updated>
+        <updated>2020-06-24T19:03:41+03:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://knowledgebase.dnsadblock.com/media/posts/17/undraw_domain_names_rdql.png" alt="" />
@@ -36,7 +36,7 @@
 <p>One of the family members is a 9 year old kid that has access to a tablet and is browsing the internet often. You wish his/her experience to be different from yours. He/she should have <code>safesearch</code> enabled, adult and many other categories of websites blocked but, enabling those, will change your experience as well so how can we do it?</p>
 <p>Recently we added a new feature that allows you to map a device that was discovered on your network to a different config that has other settings...obviously. The DNS server processing the request is the same one attached to your main config but it applies the mapped config if the device has one attached.</p>
 <p><img class="post__image" src="https://knowledgebase.dnsadblock.com/media/posts/17/screenshot-dnsadblock.com-2020.06.24-18_52_121.png" alt="" width="1287" height="1114"></p>
-<p class="msg msg--warning">This new setting basically allows us to have per-device configs. Keep in mind that this only works when dnsadblock is installed in router mode.</p>
+<p class="msg msg--warning">This new setting basically allows us to have per-device configs. Keep in mind that this only works when dnsadblock is <a href="https://knowledgebase.dnsadblock.com/how-to-install-and-configure-our-software/" target="_blank" rel="noopener noreferrer">running as a daemon</a> and with router setup enabled.</p>
             ]]>
         </content>
     </entry>
