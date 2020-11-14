@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://knowledgebase.dnsadblock.com/sitemap.xml
